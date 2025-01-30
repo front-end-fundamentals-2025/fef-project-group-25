@@ -28,7 +28,7 @@ body{
 
 /*homepage picture*/
 .homepage{
-    background-image: url("../images/home-img.jpg");
+    background-image: url("/images/home-img.jpg");
 }
 /*homepage picture*/
 

@@ -1,0 +1,40 @@
+/*navigation bar*/
+#logo{
+    color: rgb(10, 64, 10);
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 20vw;
+}
+
+a {
+    color: rgb(119, 98, 70);
+    list-style: none;
+    text-decoration: none;
+    
+}
+nav{
+    display: flex;
+    gap: 5vw;
+    margin-right: 0;
+    margin-left: 15vw;
+}
+
+body{
+  background-color: rgb(224, 212, 180); 
+}
+/*main*/
+
+/*homepage picture*/
+.homepage{
+    background-image: url("../images/home-img.jpg");
+}
+/*homepage picture*/
+
+/* footer */
+footer{
+    margin-top: 5vw;
+    border-top: 0.2vw solid;
+    color:  rgb(119, 98, 70);
+}

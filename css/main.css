@@ -55,7 +55,78 @@ figure{
 }
 
 
+
 /*homepage picture*/
+
+/* overview images */
+.overview{
+    border: 30px solid rgb(219, 203, 174);
+    border-radius: 60px;
+}
+/* overview images */
+
+/* see more button */
+ .see-more{
+    margin-left: 45% ;
+    background-color: rgb(99, 168, 99);
+    color: wheat;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 230%;
+    border: none;
+    border-radius: 50px;
+}
+
+.see-more:hover{
+    background-color: rgb(78, 134, 78);
+    cursor: pointer;
+}
+/* see more button */
+
+/* spring-campaign */
+.spring{
+    background-image: url(../images/spring-campaign.jpg);
+    padding: 10%;
+    background-repeat: none;
+    background-size: cover;
+    margin-top: 2vh;
+}
+.spring h3 {
+    text-align: center;
+   font-size: 490%;
+}
+/* spring-campaign */
+
+/* summer-campaign */
+.summer{
+    background-image: url(../images/summer-campaign.jpg);
+    padding: 10%;
+    background-repeat: none;
+    background-size: cover;
+    background-position: 5% bottom;
+    margin-top: 2vh;
+}
+.summer h3 {
+    text-align: center;
+   font-size: 490%;
+}
+/* summer-campaign */
+
+/* valentine-campaign */
+.valentine{
+    background-image: url(../images/valentine-campaign.jpg);
+    padding: 10%;
+    background-repeat: none;
+    background-size: cover;
+    margin-top: 2vh;
+}
+.valentine h3 {
+    text-align: center;
+   font-size: 490%;
+}
+/* valentine-campaign */
 
 /* footer */
 footer{

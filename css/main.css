@@ -33,7 +33,7 @@ body{
     grid-template-columns: repeat(3, 1fr);
 }
 .homepage{
-    background-image: url("/images/home-img.jpg");
+    background-image: url("../images/home-img.jpg");
     padding: 20%;
     background-size: cover;
     background-repeat: none;

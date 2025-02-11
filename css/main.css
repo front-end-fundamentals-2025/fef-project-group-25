@@ -21,6 +21,10 @@ nav{
     margin-left: 15vw;
 }
 
+.product li{
+    text-decoration: underline;
+}
+
 body{
   background-color: rgb(224, 212, 180); 
 }
@@ -134,3 +138,47 @@ footer{
     border-top: 0.2vw solid;
     color:  rgb(119, 98, 70);
 }
+
+/* product page */
+h2{
+    text-align: center;
+    font-size: 180%;
+}
+
+.product-name{
+    display: flex;
+    gap: 15%;
+    margin-left: 25%;
+}
+
+.fa-cart-plus{
+    margin-top:9.5%; 
+}
+ .product-name a {
+    margin-top:9.5%;
+}
+/* product page */
+
+/* detailed page */
+.detailed-roses{
+    width: 80%;
+   
+}
+
+h3{
+    margin-top: 5%;
+    font-size: 180%;
+
+}
+.left-detailed{
+    text-align: left;
+}
+.right-detailed ul{
+    list-style: none;
+}
+
+.detailed-page{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+}
+/* detailed page */

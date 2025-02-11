@@ -71,13 +71,13 @@ figure{
 
 /* see more button */
  .see-more{
-    margin-left: 45% ;
+    margin-left: 49% ;
     background-color: rgb(99, 168, 99);
     color: wheat;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
     font-size: 200%;
     border: none;
     border-radius: 50px;
@@ -139,6 +139,74 @@ footer{
     color:  rgb(119, 98, 70);
 }
 
+/* media query */
+@media screen  and (max-width: 400px){
+/* header and nav */
+    header{
+        display: flex;
+        align-items: center;
+        gap: 0.01%;
+    }
+
+    #logo{
+        font-size:60% ;
+    }
+    nav a{
+        font-size:35% ;
+        font-weight:700;
+    }
+    /* header and nav */
+/* homepage stuff */
+    .homepage{
+        background-image: url("../images/home-img.jpg");
+        padding: 40%;
+        background-size: contain;
+        background-repeat: none;
+    
+    }
+
+    .home-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* homepage stuff */
+/* see-more button */
+    .see-more{
+        margin-top: 10%;
+        margin-left: 42%;
+    background-color: rgb(99, 168, 99);
+    color: wheat;
+    padding-top: 0.4vh;
+    padding-bottom: 0.4vh;
+    padding-left: 1.8vw;
+    padding-right: 1.8vw;
+    font-size: 80%;
+    border: none;
+    border-radius: 50px;
+    }
+
+    .see-more:hover{
+        background-color: rgb(78, 134, 78);
+        cursor: pointer;
+    }
+    /* see-more button */
+    /* campaign */
+    .summer h3 {
+        text-align: center;
+       font-size: 190%;
+    }
+    .spring h3 {
+        text-align: center;
+       font-size: 190%;
+    }
+    .valentine h3 {
+        text-align: center;
+       font-size: 190%;
+    }
+    /* campaign */
+}
+/* media query */
+
 /* product page */
 h2{
     text-align: center;
@@ -182,3 +250,4 @@ h3{
     grid-template-columns: repeat(2, 1fr) ;
 }
 /* detailed page */
+

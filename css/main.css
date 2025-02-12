@@ -318,3 +318,31 @@ h3{
 }
 /* detailed page */
 
+/* FAQ page */
+h4{
+    text-align: center;
+}
+
+.faq{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+}
+
+.faq-item {
+   
+}
+.answer{
+   text-align: justify;
+}
+
+.faq-img{
+    background-image: url("../images/faq-img.jpg");
+    padding: 10%;
+    background-size: contain;
+    background-repeat: none;
+   
+}
+
+
+/* FAQ page */

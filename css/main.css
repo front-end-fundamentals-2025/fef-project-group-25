@@ -1,179 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 /*navigation bar*/
-#logo{
-    color: rgb(10, 64, 10);
+#logo {
+  color: rgb(10, 64, 10);
 }
-header{
-    display: flex;
-    align-items: center;
-    gap: 20vw;
+header {
+  display: flex;
+  align-items: center;
+  gap: 20vw;
+}
+
+header li{
+    font-size: 150%;
+}
+
+#logo{
+    font-size: 200%;
 }
 
 a {
-    color: rgb(119, 98, 70);
-    list-style: none;
-    text-decoration: none;
-    
+  color: rgb(119, 98, 70);
+  list-style: none;
+  text-decoration: none;
 }
-nav{
-    display: flex;
-    gap: 5vw;
-    margin-right: 0;
-    margin-left: 15vw;
-}
-
-.product li{
-    text-decoration: underline;
+nav {
+  display: flex;
+  gap: 5vw;
+  margin-right: 0;
+  margin-left: 15vw;
 }
 
-body{
-  background-color: rgb(224, 212, 180); 
+.product li {
+  text-decoration: underline;
+}
+
+body {
+  background-color: rgb(224, 212, 180);
 }
 /*main*/
 
 /*homepage picture*/
 
-.home-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-.homepage{
-    background-image: url("../images/home-img.jpg");
-    padding: 20%;
-    background-size: cover;
-    background-repeat: none;
-
+.homepage {
+  background-image: url("../images/home-img.jpg");
+  padding: 20%;
+  background-size: cover;
+  background-repeat: none;
 }
-h1{
-    text-align: center;
-    color: wheat;
+h1 {
+  text-align: center;
+  color: wheat;
+  font-size: 520%;
 }
-figure{
-    align-items: center;
-
+figure {
+  align-items: center;
 }
-.overview{
-    margin-top: 5vw;
-    width: 80%;
-    height: 75%;
-
+.overview {
+  margin-top: 5vw;
+  width: 80%;
+  height: 75%;
 }
-
-
 
 /*homepage picture*/
 
 /* overview images */
-.overview{
-    border: 30px solid rgb(219, 203, 174);
-    border-radius: 60px;
+.overview {
+  border: 30px solid rgb(219, 203, 174);
+  border-radius: 60px;
 }
 /* overview images */
 
 /* see more button */
- .see-more{
-    margin-left: 49% ;
-    background-color: rgb(99, 168, 99);
-    color: wheat;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 200%;
-    border: none;
-    border-radius: 50px;
+.see-more {
+  margin-left: 46%;
+  background-color: rgb(99, 168, 99);
+  color: wheat;
+  padding-top: 0.8%;
+  padding-bottom: 0.8%;
+  padding-left: 0.9%;
+  padding-right: 0.9%;
+  font-size: 200%;
+  border: none;
+  border-radius: 50px;
 }
 
-.see-more:hover{
-    background-color: rgb(78, 134, 78);
-    cursor: pointer;
+.see-more:hover {
+  background-color: rgb(78, 134, 78);
+  cursor: pointer;
 }
 /* see more button */
 
 /* spring-campaign */
-.spring{
-    background-image: url(../images/spring-campaign.jpg);
-    padding: 10%;
-    background-repeat: none;
-    background-size: cover;
-    margin-top: 2vh;
+.spring {
+  background-image: url(../images/spring-campaign.jpg);
+  padding: 10%;
+  background-repeat: none;
+  background-size: cover;
+  margin-top: 2vh;
 }
 .spring h3 {
-    text-align: center;
-   font-size: 490%;
+  text-align: center;
+  font-size: 490%;
 }
 /* spring-campaign */
 
 /* summer-campaign */
-.summer{
-    background-image: url(../images/summer-campaign.jpg);
-    padding: 10%;
-    background-repeat: none;
-    background-size: cover;
-    background-position: 5% bottom;
-    margin-top: 2vh;
+.summer {
+  background-image: url(../images/summer-campaign.jpg);
+  padding: 10%;
+  background-repeat: none;
+  background-size: cover;
+  background-position: 5% bottom;
+  margin-top: 2vh;
 }
 .summer h3 {
-    text-align: center;
-   font-size: 490%;
+  text-align: center;
+  font-size: 490%;
 }
 /* summer-campaign */
 
 /* valentine-campaign */
-.valentine{
-    background-image: url(../images/valentine-campaign.jpg);
-    padding: 10%;
-    background-repeat: none;
-    background-size: cover;
-    margin-top: 2vh;
+.valentine {
+  background-image: url(../images/valentine-campaign.jpg);
+  padding: 10%;
+  background-repeat: none;
+  background-size: cover;
+  margin-top: 2vh;
 }
 .valentine h3 {
-    text-align: center;
-   font-size: 490%;
+  text-align: center;
+  font-size: 490%;
 }
 /* valentine-campaign */
 
 /* footer */
-footer{
-    margin-top: 5vw;
-    border-top: 0.2vw solid;
-    color:  rgb(119, 98, 70);
+footer {
+  margin-top: 5vw;
+  border-top: 0.2vw solid;
+  color: rgb(119, 98, 70);
 }
 
 /* media query */
-@media screen  and (max-width: 500px){
-/* header and nav */
-    header{
-        display: flex;
-        align-items: center;
-        gap: 0.01%;
-    }
+@media screen and (max-width: 500px) {
+  /* header and nav */
+  header {
+    display: flex;
+    align-items: center;
+    gap: 0.01%;
+  }
 
-    #logo{
-        font-size:60% ;
-    }
-    nav a{
-        font-size:35% ;
-        font-weight:700;
-    }
-    /* header and nav */
-/* homepage stuff */
-    .homepage{
-        background-image: url("../images/home-img.jpg");
-        padding: 40%;
-        background-size: contain;
-        background-repeat: none;
-    
-    }
+  #logo {
+    font-size: 60%;
+  }
+  nav a {
+    font-size: 35%;
+    font-weight: 700;
+  }
+  /* header and nav */
+  /* homepage stuff */
+  .homepage {
+    background-image: url("../images/home-img.jpg");
+    padding: 40%;
+    background-size: contain;
+    background-repeat: none;
+  }
 
-    .home-container{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    /* homepage stuff */
-/* see-more button */
-    .see-more{
-        margin-top: 10%;
-        margin-left: 42%;
+  .home-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /* homepage stuff */
+  /* see-more button */
+  .see-more {
+    margin-top: 10%;
+    margin-left: 42%;
     background-color: rgb(99, 168, 99);
     color: wheat;
     padding-top: 0.4vh;
@@ -183,64 +187,63 @@ footer{
     font-size: 80%;
     border: none;
     border-radius: 50px;
-    }
+  }
 
-    .see-more:hover{
-        background-color: rgb(78, 134, 78);
-        cursor: pointer;
-    }
-    /* see-more button */
-    /* campaign */
-    .summer h3 {
-        text-align: center;
-       font-size: 190%;
-    }
-    .spring h3 {
-        text-align: center;
-       font-size: 190%;
-    }
-    .valentine h3 {
-        text-align: center;
-       font-size: 190%;
-    }
-    /* campaign */
+  .see-more:hover {
+    background-color: rgb(78, 134, 78);
+    cursor: pointer;
+  }
+  /* see-more button */
+  /* campaign */
+  .summer h3 {
+    text-align: center;
+    font-size: 190%;
+  }
+  .spring h3 {
+    text-align: center;
+    font-size: 190%;
+  }
+  .valentine h3 {
+    text-align: center;
+    font-size: 190%;
+  }
+  /* campaign */
 }
 
 /* media query */
-@media screen and (min-width: 501px) and (max-width: 1100px){
-/* header and nav */
-    header{
-        display: flex;
-        align-items: center;
-        gap: 0.01%;
-    }
+@media screen and (min-width: 501px) and (max-width: 1100px) {
+  /* header and nav */
+  header {
+    display: flex;
+    align-items: center;
+    gap: 0.01%;
+  }
 
-    #logo{
-        font-size:60% ;
-    }
-    nav a{
-        font-size:35% ;
-        font-weight:700;
-    }
-    /* header and nav */
-/* homepage stuff */
-    .homepage{
-        background-image: url("../images/home-img.jpg");
-        padding: 40%;
-        background-size: contain;
-        background-repeat: none;
-    
-    }
+  #logo {
+    font-size: 60%;
+  }
+  nav a {
+    font-size: 35%;
+    font-weight: 700;
+  }
+  /* header and nav */
+  /* homepage stuff */
+  .homepage {
+    background-image: url("../images/home-img.jpg");
+    padding: 40%;
+    background-size: contain;
+    background-repeat: none;
+  }
 
-    .home-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    /* homepage stuff */
-/* see-more button */
-    .see-more{
-        margin-top: 20%;
-        margin-left: 42%;
+  .home-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /* homepage stuff */
+  /* see-more button */
+  .see-more {
+    margin-top: 20%;
+    margin-left: 42%;
     background-color: rgb(99, 168, 99);
     color: wheat;
     padding-top: 0.4vh;
@@ -250,99 +253,165 @@ footer{
     font-size: 80%;
     border: none;
     border-radius: 50px;
-    }
+  }
 
-    .see-more:hover{
-        background-color: rgb(78, 134, 78);
-        cursor: pointer;
-    }
-    /* see-more button */
-    /* campaign */
-    .summer h3 {
-        text-align: center;
-       font-size: 190%;
-    }
-    .spring h3 {
-        text-align: center;
-       font-size: 190%;
-    }
-    .valentine h3 {
-        text-align: center;
-       font-size: 190%;
-    }
-    /* campaign */
+  .see-more:hover {
+    background-color: rgb(78, 134, 78);
+    cursor: pointer;
+  }
+  /* see-more button */
+  /* campaign */
+  .summer h3 {
+    text-align: center;
+    font-size: 190%;
+  }
+  .spring h3 {
+    text-align: center;
+    font-size: 190%;
+  }
+  .valentine h3 {
+    text-align: center;
+    font-size: 190%;
+  }
+  /* campaign */
 }
 /* media query */
 
 /* product page */
-h2{
-    text-align: center;
-    font-size: 180%;
+h2 {
+  text-align: center;
+  font-size: 180%;
 }
 
-.product-name{
-    display: flex;
-    gap: 15%;
-    margin-left: 25%;
+.product-name {
+  display: flex;
+  gap: 15%;
+  margin-left: 25%;
 }
 
-.fa-cart-plus{
-    margin-top:9.5%; 
+.fa-cart-plus {
+  margin-top: 9.5%;
 }
- .product-name a {
-    margin-top:9.5%;
+.product-name a {
+  margin-top: 9.5%;
 }
 /* product page */
 
 /* detailed page */
-.detailed-roses{
-    width: 80%;
-   
+.detailed-roses {
+  width: 80%;
 }
 
-h3{
-    margin-top: 5%;
-    font-size: 180%;
+h3 {
+  margin-top: 5%;
+  font-size: 180%;
+}
+.left-detailed {
+  text-align: left;
+}
+.right-detailed ul {
+  list-style: none;
+}
 
-}
-.left-detailed{
-    text-align: left;
-}
-.right-detailed ul{
-    list-style: none;
-}
-
-.detailed-page{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) ;
+.detailed-page {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 /* detailed page */
 
 /* FAQ page */
-h4{
-    text-align: center;
+h4 {
+  text-align: center;
+  color: black;
+  font-size: 200%;
+  font-family: "Ubuntu";
 }
 
-.faq{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2%;
+#faq-effect{
+    text-decoration: underline;
+}
+
+.faq {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2%;
+  margin-top: 2%;
+  align-items: center;
+}
+
+.faq-header {
+  padding: 10%;
+  background-color: rgb(1, 38, 1);
+  
 }
 
 .faq-item {
-   
+    background-color: #efead4; 
+    border-radius: 10px; 
+    padding: 15px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    cursor: pointer; 
+    
+    font-weight: bold;
+    font-size: 16px;
 }
-.answer{
-   text-align: justify;
+summary::marker{
+    color: rgb(78, 134, 78);
 }
 
-.faq-img{
-    background-image: url("../images/faq-img.jpg");
-    padding: 10%;
-    background-size: contain;
-    background-repeat: none;
-   
+.answer {
+  text-align: justify;
 }
 
+.faq-img {
+  background-image: url("../images/faq-img.jpg");
+  padding: 10%;
+  background-size: contain;
+  background-repeat: none;
+  filter: brightness(70%);
+}
 
 /* FAQ page */
+
+/* Contact Us Page */
+.contact-right h1{
+   color: black;
+}
+.contact-body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#contact-effect{
+    text-decoration: underline;
+}
+.contact-left {
+    flex: 1; /* Ensures it takes equal space */
+    background-image: url("/images/sideflower.jpg");
+    background-size: cover; /* Ensures no white space */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+.contact-right {
+    flex: 1; /* Ensures it takes equal space */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 5%;
+    border: solid 0.3vw rgb(78, 134, 78);
+}
+.name-flex{
+    display: flex;
+    gap: 2%;
+}
+.message input{
+    padding-right: 25%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+/* Contact Us Page */

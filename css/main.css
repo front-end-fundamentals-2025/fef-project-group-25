@@ -391,7 +391,7 @@ summary::marker{
 }
 .contact-left {
     flex: 1; /* Ensures it takes equal space */
-    background-image: url("/images/sideflower.jpg");
+    background-image: url("../images/sideflower.jpg");
     background-size: cover; /* Ensures no white space */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat;

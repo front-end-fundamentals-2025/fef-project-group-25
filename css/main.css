@@ -11,11 +11,11 @@ header {
 }
 
 header li{
-    font-size: 150%;
+    font-size: 80%;
 }
 
 #logo{
-    font-size: 200%;
+    font-size: 150%;
 }
 
 a {
@@ -51,22 +51,24 @@ body {
 }
 .homepage {
   background-image: url("../images/home-img.jpg");
-  padding: 20%;
+  margin-top: 2%;
+  padding: 5%;
   background-size: cover;
   background-repeat: none;
 }
 h1 {
   text-align: center;
   color: wheat;
-  font-size: 520%;
+  font-size: 500%;
 }
 figure {
   align-items: center;
 }
 .overview {
   margin-top: 5vw;
-  width: 80%;
-  height: 75%;
+  margin-left: 20%;
+  width: 50%;
+  height: 55%;
 }
 
 /*homepage picture*/
@@ -74,20 +76,20 @@ figure {
 /* overview images */
 .overview {
   border: 30px solid rgb(219, 203, 174);
-  border-radius: 60px;
+  border-radius: 10px;
 }
 /* overview images */
 
 /* see more button */
 .see-more {
-  margin-left: 46%;
+  margin-left: 47%;
   background-color: rgb(99, 168, 99);
   color: wheat;
-  padding-top: 0.8%;
+  padding-top: 0,8%;
   padding-bottom: 0.8%;
   padding-left: 0.9%;
   padding-right: 0.9%;
-  font-size: 200%;
+  font-size: 100%;
   border: none;
   border-radius: 50px;
 }
@@ -101,10 +103,10 @@ figure {
 /* spring-campaign */
 .spring {
   background-image: url(../images/spring-campaign.jpg);
-  padding: 10%;
+  padding: 1%;
   background-repeat: none;
   background-size: cover;
-  margin-top: 2vh;
+  margin-top: 5%;
 }
 .spring h3 {
   text-align: center;
@@ -115,7 +117,7 @@ figure {
 /* summer-campaign */
 .summer {
   background-image: url(../images/summer-campaign.jpg);
-  padding: 10%;
+  padding: 1%;
   background-repeat: none;
   background-size: cover;
   background-position: 5% bottom;
@@ -130,7 +132,7 @@ figure {
 /* valentine-campaign */
 .valentine {
   background-image: url(../images/valentine-campaign.jpg);
-  padding: 10%;
+  padding: 1%;
   background-repeat: none;
   background-size: cover;
   margin-top: 2vh;
@@ -158,10 +160,10 @@ footer {
   }
 
   #logo {
-    font-size: 60%;
+    font-size: 50%;
   }
   nav a {
-    font-size: 35%;
+    font-size: 25%;
     font-weight: 700;
   }
   /* header and nav */
@@ -418,11 +420,15 @@ summary::marker{
     padding-top: 2%;
     padding-bottom: 5%;
 }
+.submit-contact input:hover{
+  background-color: #b6b4b4;
+}
 /* Contact Us Page */
 /* About us */
 .about-us-background {
   background-image: url("../images/about-us-image.jpg");
-  padding: 15%;
+  margin-top: 5%;
+  padding: 2.5%;
   background-size: cover;
   background-repeat: none;
 }
@@ -435,19 +441,23 @@ h1 {
   font-size: 520%;
 }
 
+/* us in about us */
 .about-us-background span{
   font-family: "Great Vibes";
   font-size: 6rem;
 }
+/* us in about us */
 
+/* second us in about us */
 .about span{
   font-family: "Great Vibes";
   font-size: 6rem;
 }
+/* second us in about us */
+
 
  .about h4 {
   text-align: center;
-  color: black;
   font-size: 4rem;
   font-family: "Ubuntu";
 }
@@ -467,20 +477,22 @@ h1 {
   }
   
   .about .about-content .about-left video{
-      width: 100%;
-      border: 1.5rem solid transparent;
-      border-radius: .5rem;
-      height: 100%;
-      object-fit: cover;
+      width: 50%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      margin-top: -8%;
   
   
   }
+  /* flower lady img */
   .about .about-content .about-left img{
-      width: 100%;
+      width: 80%;
       border: 1.5rem solid transparent;
       border-radius: .5rem;
       height: 100%;
       object-fit: cover;
+      
   
   
   }
@@ -508,45 +520,62 @@ h1 {
 }
 
 .about .about-content .about-right p{
-    font-size: 2.5rem ;
+    font-size: 1rem ;
     color:#000000 ;
     padding-left: 10%;
+    text-align: center;
 }
 
 .founders h4{
+
   font-family:"Great Vibes";
-  font-size: 8rem;
+  font-weight: 100;
+  font-size: 4rem;
 }
 .founders-content{
   display: flex;
   gap: 10%;
 }
-.founder-left {
-  margin-left: 7%;
- background-image: url(../images/founder-1.JPG);
- padding: 20%;
- background-repeat: no-repeat;
- background-size: contain;
- 
-  
+
+.founders-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vw;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+
 }
-.founder-right {
-  background-image: url(../images/founder-2.jpg);
-  padding: 20.5%;
-  background-repeat: no-repeat;
-  background-size: contain;
+
+.founder-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 2%;
+}
+.founder-img img{
+  width: 60%;
+  margin-left: 20%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .founder-left-name {
-  margin-left: 7%;
-  margin-top: -7%;
- /* background-image: url(../images/founder-1.JPG); */
-  
+  margin-left: 11%;
+ margin-top: -7%;
+
 }
 .founder-right-name {
-  margin-left: 20%;
+  margin-left: 22%;
   margin-top: -7%;
 }
+
+/* background color for founders */
+.founder-color{
+  background-color: rgb(126, 111, 88);
+}
+/* background color for founders */
+
 /* About us */
 
 /* footer */

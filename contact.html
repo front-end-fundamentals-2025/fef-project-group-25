@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Document</title>
   </head>
@@ -29,13 +30,13 @@
 
         <a href="about-us.html" class="fas fa-heart"> </a>
 
-        <a href="about-us.html" class="fas fa-shopping-cart"> </a>
+        <a href="shopping.html" class="fas fa-shopping-cart"> </a>
       </nav>
     </header>
     <section class="contact-body">
       <div class="contact-left"></div>
       <div class="contact-right">
-        <h1>CONTACT <span>Us</span></h1>
+        <h1 id="heading">CONTACT <span>Us</span></h1>
         <p>For press inquires email orsiun@gmail.com</p>
         <p>For questions about your order, please check <a href="faq.html">FAQ page.</a></p>
         <p>For general inquires,please fill out the form below and someone will contact you within <strong>24 hours</strong>.</p>
@@ -44,11 +45,11 @@
         <div class="name-flex">
         <div>
           <label for="first-name">First Name</label><br>
-          <input type="text" id="email" required>
+          <input type="text" id="first-name" required>
         </div>
         <div>
           <label for="last-name">Last Name</label><br>
-          <input type="text" id="email" required>
+          <input type="text" id="last-name" required>
         </div>
       </div>
       <br>
@@ -67,8 +68,7 @@
         <input type="text" id="message" required>
       </div>
       <div class="submit-contact">
-        <a href="submit.html">
-        <input type="submit">
+        <button id="enter-button" type="button">Enter</button>
       </a>
       </div>
         </form>

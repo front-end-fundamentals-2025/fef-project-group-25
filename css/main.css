@@ -570,6 +570,30 @@ h1 {
 
 /* About us */
 
+/* SHOPPING CART*/
+.shopping-cart{
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+.cart-items{
+  margin-top: 30%;
+  align-items: center;
+}
+.shopping-container{
+  grid-template-columns: repeat(4,1fr);
+  display: grid;
+  gap: 5%;
+  align-items: start;
+  padding: 10%;
+}
+#amount{
+  margin-top: 30%;
+  
+}
+
+
+/* SHOPPING CART*/
 /* footer */
 .footer{
   margin-left: 7%;

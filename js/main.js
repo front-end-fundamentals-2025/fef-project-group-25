@@ -1,4 +1,4 @@
-
+/* contact page*/
 const headingElement = document.getElementById("heading");
 const firstNameInputElement= document.getElementById("first-name");
 const lastNameInputElement = document.getElementById("last-name");
@@ -6,6 +6,8 @@ const emailInputElement = document.getElementById("email");
 const subjectInputElement = document.getElementById("subject");
 const messageInputElement = document.getElementById("message");
 const buttonElement = document.getElementById("enter-button");
+
+/*shopping cart */
 
 /* contact page*/
 buttonElement.addEventListener("click", function(event){
@@ -23,3 +25,4 @@ buttonElement.addEventListener("click", function(event){
 
 })
 
+/*shopping cart */

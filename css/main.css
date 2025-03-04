@@ -51,6 +51,17 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
+.home-container img{
+ border: solid black;
+ border-radius: 0;
+ transition: transform 0.5s ease-in-out;
+}
+
+.overview:hover{
+ border: solid rgb(9, 99, 4);
+ transform: scale(1.1);
+}
 .homepage {
   background-image: url("../images/home-img.jpg");
   padding: 20%;
@@ -82,20 +93,23 @@ figure {
 
 /* see more button */
 .see-more {
-  margin-left: 46%;
-  background-color: rgb(99, 168, 99);
-  color: wheat;
-  padding-top: 0.8%;
-  padding-bottom: 0.8%;
+  margin-left: 48%;
+  margin-top: 4%;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  padding-top: 0.3%;
+  padding-bottom: 0.5%;
   padding-left: 0.9%;
   padding-right: 0.9%;
   font-size: 200%;
-  border: none;
-  border-radius: 50px;
+  border: solid 2px black;
+  text-align: center;
+  
+ transition: transform 0.5s ease-in-out;
 }
 
 .see-more:hover {
-  background-color: rgb(78, 134, 78);
+  background-color:  rgb(10, 64, 10);
   cursor: pointer;
 }
 /* see more button */
@@ -241,7 +255,7 @@ footer {
     background-repeat: none;
   }
 
-  .home-container {
+  .product-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -284,6 +298,21 @@ footer {
 /* media query */
 
 /* product page */
+.product-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product-container img{
+ border: solid black;
+ border-radius: 0;
+ transition: transform 0.5s ease-in-out;
+}
+
+.overview:hover{
+ border: solid rgb(9, 99, 4);
+ transform: scale(1.1);
+}
 h2 {
   text-align: center;
   font-size: 180%;
@@ -437,14 +466,15 @@ textarea::placeholder{
   font-size: 1.2rem;
 }
 button {
-background-color: black;
+background-color: transparent;
 color: white;
 padding: 10px;
-border: none;
+border: solid 2px black;
 cursor: pointer;
+transform: transition 0.5s ease-in-out;
 }
 button:hover {
-background-color: #333;
+background-color: #000000;
 }
 .name-flex {
 display: flex;
@@ -576,6 +606,7 @@ h1 {
 /* footer */
 .footer{
   margin-left: 7%;
+  padding-top: 5%;
 }
 .footer .bx-container{
   display: flex;

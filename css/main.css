@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Great+Vibes&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Great+Vibes&family=Imperial+Script&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 /*navigation bar*/
 #logo {
   color: rgb(10, 64, 10);
@@ -11,11 +13,11 @@ header {
 }
 
 header li{
-    font-size: 80%;
+    font-size: 150%;
 }
 
 #logo{
-    font-size: 150%;
+    font-size: 200%;
 }
 
 a {
@@ -51,24 +53,22 @@ body {
 }
 .homepage {
   background-image: url("../images/home-img.jpg");
-  margin-top: 2%;
-  padding: 5%;
+  padding: 20%;
   background-size: cover;
   background-repeat: none;
 }
 h1 {
   text-align: center;
   color: wheat;
-  font-size: 500%;
+  font-size: 520%;
 }
 figure {
   align-items: center;
 }
 .overview {
   margin-top: 5vw;
-  margin-left: 20%;
-  width: 50%;
-  height: 55%;
+  width: 80%;
+  height: 75%;
 }
 
 /*homepage picture*/
@@ -76,20 +76,20 @@ figure {
 /* overview images */
 .overview {
   border: 30px solid rgb(219, 203, 174);
-  border-radius: 10px;
+  border-radius: 60px;
 }
 /* overview images */
 
 /* see more button */
 .see-more {
-  margin-left: 47%;
+  margin-left: 46%;
   background-color: rgb(99, 168, 99);
   color: wheat;
-  padding-top: 0,8%;
+  padding-top: 0.8%;
   padding-bottom: 0.8%;
   padding-left: 0.9%;
   padding-right: 0.9%;
-  font-size: 100%;
+  font-size: 200%;
   border: none;
   border-radius: 50px;
 }
@@ -103,10 +103,10 @@ figure {
 /* spring-campaign */
 .spring {
   background-image: url(../images/spring-campaign.jpg);
-  padding: 1%;
+  padding: 10%;
   background-repeat: none;
   background-size: cover;
-  margin-top: 5%;
+  margin-top: 2vh;
 }
 .spring h3 {
   text-align: center;
@@ -117,7 +117,7 @@ figure {
 /* summer-campaign */
 .summer {
   background-image: url(../images/summer-campaign.jpg);
-  padding: 1%;
+  padding: 10%;
   background-repeat: none;
   background-size: cover;
   background-position: 5% bottom;
@@ -132,7 +132,7 @@ figure {
 /* valentine-campaign */
 .valentine {
   background-image: url(../images/valentine-campaign.jpg);
-  padding: 1%;
+  padding: 10%;
   background-repeat: none;
   background-size: cover;
   margin-top: 2vh;
@@ -160,10 +160,10 @@ footer {
   }
 
   #logo {
-    font-size: 50%;
+    font-size: 60%;
   }
   nav a {
-    font-size: 25%;
+    font-size: 35%;
     font-weight: 700;
   }
   /* header and nav */
@@ -294,20 +294,9 @@ h2 {
   gap: 15%;
   margin-left: 25%;
 }
-.overview{
-  height: 50%;
-  width: 70%;
-}
 
 .fa-cart-plus {
   margin-top: 9.5%;
-}
-.fa-cart-plus:hover{
-  color: antiquewhite;
-}
-
-.fa-heart:hover{
-  color: antiquewhite;
 }
 .product-name a {
   margin-top: 9.5%;
@@ -392,54 +381,80 @@ summary::marker{
 /* FAQ page */
 
 /* Contact Us Page */
-.contact-right h1{
-   color: black;
+.contact-body{
+  display: flex;
 }
-.contact-body {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-#contact-effect{
-    text-decoration: underline;
+.contact-body  h1{
+  color: #000;
 }
 .contact-left {
-    flex: 1; /* Ensures it takes equal space */
-    background-image: url("../images/sideflower.jpg");
-    background-size: cover; /* Ensures no white space */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat;
+  flex: 1;
+  height: 100vh;
+  background-image: url("../images/sideflower.jpg"); 
+  background-size: cover;
+  background-position: center;
+}
+.contact-right {
+  flex: 1;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  border: solid black;
+}
+.contact-right h1 {
+font-size: 5rem;
+font-weight: normal;
+
 }
 
-.contact-right {
-    flex: 1; /* Ensures it takes equal space */
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    padding: 5%;
-    border: solid 0.3vw rgb(78, 134, 78);
+.contact-right span {
+font-size: 7rem;
+font-family: "Imperial Script";
 }
-.name-flex{
-    display: flex;
-    gap: 2%;
+.contact-right p {
+font-size: 1.5rem;
+color: #555;
+margin-bottom: 10px;
 }
-.message input{
-    padding-right: 25%;
-    padding-top: 2%;
-    padding-bottom: 5%;
+form {
+display: flex;
+flex-direction: column;
 }
-.submit-contact input:hover{
-  background-color: #b6b4b4;
+input, textarea {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #000000;
+border-radius: 5px;
+background-color: rgb(224, 212, 180);
+}
+input::placeholder{
+  color: #000;
+  font-size: 1.2rem;
+}
+textarea::placeholder{
+  color: #000;
+  font-size: 1.2rem;
+}
+button {
+background-color: black;
+color: white;
+padding: 10px;
+border: none;
+cursor: pointer;
+}
+button:hover {
+background-color: #333;
+}
+.name-flex {
+display: flex;
+gap: 10px;
 }
 /* Contact Us Page */
 /* About us */
 .about-us-background {
   background-image: url("../images/about-us-image.jpg");
-  margin-top: 5%;
-  padding: 2.5%;
+  padding: 15%;
   background-size: cover;
   background-repeat: none;
 }
@@ -452,23 +467,19 @@ h1 {
   font-size: 520%;
 }
 
-/* us in about us */
 .about-us-background span{
-  font-family: "Great Vibes";
-  font-size: 6rem;
+  font-family: "Imperial Script";
+  font-size: 8rem;
 }
-/* us in about us */
 
-/* second us in about us */
 .about span{
-  font-family: "Great Vibes";
+  font-family: "Imperial Script";
   font-size: 6rem;
 }
-/* second us in about us */
-
 
  .about h4 {
   text-align: center;
+  color: black;
   font-size: 4rem;
   font-family: "Ubuntu";
 }
@@ -488,22 +499,38 @@ h1 {
   }
   
   .about .about-content .about-left video{
-      object-fit: cover;
       width: 100%;
-      height: 20%;
-      display: block;
-      margin: 0 auto;
-      margin-top: -8%;
-  
-  
-  }
-  /* flower lady img */
-  .about .about-content .about-left img{
-      width: 80%;
       border: 1.5rem solid transparent;
       border-radius: .5rem;
       height: 100%;
       object-fit: cover;
+  
+  
+  }
+  .about .about-content .about-left img{
+      width: 100%;
+      border: 1.5rem solid transparent;
+      border-radius: .5rem;
+      height: 100%;
+      object-fit: cover;
+  
+  
+  }
+   .about-right img{
+      width: 100%;
+      border: 1.5rem solid transparent;
+      border-radius: .5rem;
+      object-fit: cover;
+  
+  
+  }
+ .about-left img{
+      width: 100%;
+      border: 1.5rem solid transparent;
+      border-radius: .5rem;
+      object-fit: cover;
+  
+  
   }
   
   .about .about-content .about-right h3{
@@ -513,87 +540,47 @@ h1 {
 }
 
 .about .about-content .about-right p{
-    font-size: 1rem ;
+    font-size: 2.5rem ;
     color:#000000 ;
     padding-left: 10%;
-    text-align: justify;
 }
 
 .founders h4{
-  font-family:"Great Vibes";
-  font-weight: 100;
-  font-size: 4rem;
+  font-family:"Imperial Script";
+  font-size: 8rem;
 }
 .founders-content{
   display: flex;
   gap: 10%;
 }
-
-.founders-grid{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2vw;
-  justify-content: center;
-  width: 80%;
-  margin: 0 auto;
-
+.founder-left {
+  margin-left: 7%;
+ background-image: url(../images/founder-1.JPG);
+ padding: 20%;
+ background-repeat: no-repeat;
+ background-size: contain;
+ 
+  
 }
-
-.founder-container{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  gap: 2%;
-}
-.founder-img img{
-  width: 60%;
-  margin-left: 20%;
-  height: auto;
-  border-radius: 10px;
+.founder-right {
+  background-image: url(../images/founder-2.jpg);
+  padding: 20.5%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .founder-left-name {
-  margin-left: 11%;
- margin-top: -7%;
-
-}
-.founder-right-name {
-  margin-left: 22%;
+  margin-left: 7%;
   margin-top: -7%;
-}
-
-/* background color for founders */
-.founder-color{
-  background-color: rgb(126, 111, 88);
-}
-/* background color for founders */
-
-/* About us */
-
-/* SHOPPING CART*/
-.shopping-cart{
-  width: 50%;
-  height: auto;
-  text-align: center;
-}
-.cart-items{
-  margin-top: 30%;
-  align-items: center;
-}
-.shopping-container{
-  grid-template-columns: repeat(4,1fr);
-  display: grid;
-  gap: 5%;
-  align-items: start;
-  padding: 10%;
-}
-#amount{
-  margin-top: 30%;
+ /* background-image: url(../images/founder-1.JPG); */
   
 }
+.founder-right-name {
+  margin-left: 20%;
+  margin-top: -7%;
+}
+/* About us */
 
-
-/* SHOPPING CART*/
 /* footer */
 .footer{
   margin-left: 7%;

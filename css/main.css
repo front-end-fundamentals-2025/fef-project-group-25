@@ -16,8 +16,9 @@ header li{
     font-size: 150%;
 }
 
-#logo{
-    font-size: 200%;
+#logo img{
+  width: 100%;
+  margin-left: 10%;
 }
 
 a {

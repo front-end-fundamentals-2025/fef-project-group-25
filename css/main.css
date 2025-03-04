@@ -499,7 +499,7 @@ h1 {
   }
   
   .about .about-content .about-left video{
-      width: 80%;
+      width: 50%;
       border: 1.5rem solid transparent;
       border-radius: .5rem;
       height: 100%;
@@ -508,7 +508,7 @@ h1 {
   
   }
   .about .about-content .about-left img{
-      width: 80%;
+      width: 50%;
       border: 1.5rem solid transparent;
       border-radius: .5rem;
       height: 100%;

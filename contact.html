@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="js/main.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -35,65 +36,52 @@
     <section class="contact-body">
       <div class="contact-left"></div>
       <div class="contact-right">
-        <h1>GET IN <span>Touch</span></h1>
+        <h1 id="heading">GET IN <span>Touch</span></h1>
         <p>For press inquiries, email info@orisun.com</p>
         <p>For order questions, check our <a href="faq.html">FAQ page</a>.</p>
         <p>For general inquiries, fill out the form below, and we’ll get back to you within 24-48 hours.</p>
         <form>
           <div class="name-flex">
-            <input type="text" placeholder="First Name" required>
-            <input type="text" placeholder="Last Name" required>
+            <input type="text" id="first-name" placeholder="First Name" required>
+            <input type="text" id="last-name" placeholder="Last Name" required>
           </div>
-          <input type="email" placeholder="Email" required>
-          <input type="text" placeholder="Subject" required>
-          <textarea placeholder="Message" rows="5" required></textarea>
-          <button type="submit">SUBMIT</button>
+          <input type="email" id="email"placeholder="Email" required>
+          <input type="text" id="subject" placeholder="Subject" required>
+          <textarea id="message" placeholder="Message" rows="5" required></textarea>
+          <button type="submit" id="enter-button">SUBMIT</button>
         </form>
       </div>
     </section>
-        </footer>
-         <!-- footer section -->
-        </section>
-        <!-- footer section -->
-        <section class="footer">
-          <div class="bx-container">
-              <div class="bx">
-                  <h3>Feeling Lazy?</h3>
-                  <a href="#home">home</a>
-                  <a href="#about">about</a>
-                  <a href="#products">products</a>
-                  <a href="#reviews">reviews</a>
-                  <a href="#contact">contact</a>
-              </div>
-    
-              <div class="bx">
-                  <h3>extra links</h3>
-                  <a href="1-2.html">my account</a>
-                  <a href="#">my order</a>
-                  <a href="#">my favourites</a>
-              </div>
-    
-              <div class="bx">
-                  <h3>locations</h3>
-                  <a href="#">Nigeria</a>
-                  <a href="#">Sweden</a>
-                  <a href="#">France</a>
-                  <a href="#">London</a>
-                  <a href="#">Japan</a>
-              </div>
-    
-              <div class="bx">
-                  <h3>Contact Info</h3>
-                  <a href="#">+234 419 090 444 696</a>
-                  <a href="#">orisun@gmail.com</a>
-                  <a href="#">Jonkoping,Sweden -789321</a>
-              </div>
-    
-          </div>
-          <p>© orisun 2025</p>
-      </section>
-        </footer>
-         <!-- footer section -->
+    <footer>
+      <!-- footer section -->
+    <section class="footer">
+     <div class="bx-container">
+         <div class="bx">
+             <h8>SHORTCUT</h8>
+             <a href="index.html">Home</a>
+             <a href="about-us.html">About</a>
+             <a href="products.html">Products</a>
+             <a href="contact.html">Contact</a>
+         </div>
 
+         <div class="bx">
+             <h8>LOCATION</h8>
+             <a href="#">Sweden</a>
+             <a href="#">Nigeria</a>
+             <a href="#">United States</a>
+             <a href="#">United Kingdom</a>
+         </div>
+
+         <div class="bx">
+             <h8>CONTACT INFO</h8>
+             <a href="#">+46 76-572 35 27</a>
+             <a href="#">Orisun@gmail.com</a>
+             <a href="#">Stockholm, Sweden</a>
+         </div>
+
+     </div>
+     <p>© Orisun 2025</p>
+   </section>
+   </footer>
   </body>
 </html>

@@ -7,10 +7,15 @@ const subjectInputElement = document.getElementById("subject");
 const messageInputElement = document.getElementById("message");
 const buttonElement = document.getElementById("enter-button");
 
+/*detailed page */
+
+
 /*shopping cart */
 
 /* contact page*/
 buttonElement.addEventListener("click", function(event){
+    event.preventDefault();
+
     let firstName = firstNameInputElement.value;
     let lastName = lastNameInputElement.value;
     let email = emailInputElement.value;
@@ -20,9 +25,12 @@ buttonElement.addEventListener("click", function(event){
     if(firstName !== ""){
         headingElement.innerText = "Thank you"
     } else{
-        headingElement.innerText= "Contact us"
+        headingElement.innerText= "Get in touch"
     }
 
 })
 
 /*shopping cart */
+
+/*detailed page */
+

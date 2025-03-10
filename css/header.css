@@ -1,0 +1,25 @@
+a {
+    color: rgb(119, 98, 70);
+    list-style: none;
+    text-decoration: none;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+  }
+  nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 3vw; /* Adjust spacing */
+  }
+  nav a{
+    color: rgb(119, 98, 70);
+    text-decoration: none;
+  }
+  li{
+    list-style: none;
+  }

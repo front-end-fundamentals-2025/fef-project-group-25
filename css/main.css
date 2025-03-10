@@ -7,9 +7,11 @@
   color: rgb(10, 64, 10);
 }
 header {
-  display: flex;
+  margin-top: 5vh;
+  padding-left: 0vw;
+  /* display: flex;
   align-items: center;
-  gap: 20vw;
+  gap: 20vw; */
 }
 
 header li{
@@ -30,9 +32,24 @@ a {
 }
 nav {
   display: flex;
-  gap: 9vw;
-  margin-right: 0;
-  margin-left: 5vw;
+  justify-content: center;
+  margin-top: -15vh;
+  padding-bottom: 25vh;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 3vw; /* Adjust spacing */
+}
+nav a{
+  color: rgb(119, 98, 70);
+  text-decoration: none;
+}
+li{
+  list-style: none;
 }
 .product li {
   text-decoration: underline;
@@ -60,13 +77,34 @@ body {
  transition: transform 0.5s ease-in-out;
 }
 
+.cls-1,.cls-2,.cls-3,.cls-4{
+  fill: transparent;
+  stroke: rgb(119, 98, 70);
+  stroke-width: 0.5;
+  stroke-dashoffset:50 ;
+  stroke-dasharray: 50;
+  animation: orisunanimation 10s ease-in-out;
+  animation-iteration-count: 30;
+}
+@keyframes orisunanimation {
+  0%{
+    stroke-dashoffset: 50;
+  }
+  85%{
+    fill: #9a7836;
+  }
+  100%{
+    fill: #9a7836;
+    stroke-dashoffset: 0;
+  }
+}
 .overview:hover{
  border: solid rgb(9, 99, 4);
  transform: scale(1.1);
 }
 .homepage {
   background-image: url("../images/home-img.jpg");
-  padding: 20%;
+  padding: 10%;
   background-size: cover;
   background-repeat: none;
 }
@@ -300,6 +338,9 @@ footer {
 /* media query */
 
 /* product page */
+.product-effect{
+  text-decoration: underline;
+}
 .product-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -458,6 +499,9 @@ summary::marker{
 /* FAQ page */
 
 /* Contact Us Page */
+.contact-effect{
+  text-decoration: underline;
+}
 .contact-body{
   display: flex;
 }
@@ -707,6 +751,9 @@ h8{
 /* footer */
 
 /* shopping page */
+#shopping-cart-effect{
+  text-decoration: underline;
+}
 .shopping-cart{
   width: 50%;
   height: auto;

@@ -766,13 +766,48 @@ h8{
   padding: 10%;
 
 }
+
+
+.first-item{
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  padding: 10%;
+
+}
+
+.second-item{
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  padding: 10%;
+}
 .input-box{
   width: 25% ;
   height: 10%;
 }
-.cart-items{
+.cart-items-title{
   font-size: 150%;
   color: rgb(119, 98, 70);
   margin: 0;
 
+}
+.cart-items-price{
+  font-size: 150%;
+  color: rgb(119, 98, 70);
+  margin: 0;
+}
+
+.delete-button{
+  background: none;
+  border: none;
+  font-size:20px;
+  color: #000000;
+  background-color: none;
 }

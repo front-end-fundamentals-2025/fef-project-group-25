@@ -21,19 +21,6 @@ if(cartItems === 0){
     cartContainerTwo.forEach(container => container.remove());
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 const deleteElement = document.getElementsByClassName("delete-button");
 console.log(deleteElement)
 for(var i=0; i < deleteElement.length; i++){

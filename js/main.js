@@ -9,21 +9,23 @@ const buttonElement = document.getElementById("enter-button");
 
 /*detailed/shopping page */
 /*const addCartElement = document.getElementsByClassName("cart-button");*/
-const shoppingCartElement = document.querySelector(".fas fa-shopping-cart");
 
+const addCart = document.getElementsByClassName("cart-button");
+const cartContainer = document.querySelectorAll(".shopping-container");
+const cartContainerTwo = document.querySelectorAll(".shopping-container-tw0");
 
+let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
 
-
-const addCartButton = document.getElementsByClassName("cart-button");
-for(var i = 0; i < addCartButton.length; i++){
-    addCartButton[i].addEventListener("click",addtoCart)
-
+if(cartItems === 0){
+    cartContainer.forEach(container => container.remove());
+    cartContainerTwo.forEach(container => container.remove());
 }
 
-function addtoCart(event){
-   let button = event.target;
-   console.log("button", button);
-}
+
+
+
+
+
 
 
 

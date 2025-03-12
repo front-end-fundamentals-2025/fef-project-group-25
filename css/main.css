@@ -766,6 +766,14 @@ h8{
   padding: 10%;
 
 }
+.shopping-container-two{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  padding: 10%;
+
+}
 
 
 .first-item{

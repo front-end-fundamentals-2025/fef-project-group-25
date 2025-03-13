@@ -818,3 +818,32 @@ h8{
   color: #000000;
   background-color: none;
 }
+
+/* spring page */
+.springpage{
+  background-image: url("../images/spring.jpg");
+  padding: 10%;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+/* spring page */
+
+/* summer page */
+
+.summerpage {
+  background-image: url("../images/summer.jpg");
+  padding: 10%;
+  background-size: cover;
+  background-repeat: none;
+}
+/* summer page */
+
+/* valentine page */
+
+.valentinepage {
+  background-image: url("../images/valentine.jpg");
+  padding: 10%;
+  background-size: cover;
+  background-repeat: none;
+}
+/* summer page */

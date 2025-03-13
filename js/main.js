@@ -1,146 +1,105 @@
-// /* contact page*/
-// const headingElement = document.getElementById("heading");
-// const firstNameInputElement= document.getElementById("first-name");
-// const lastNameInputElement = document.getElementById("last-name");
-// const emailInputElement = document.getElementById("email");
-// const subjectInputElement = document.getElementById("subject");
-// const messageInputElement = document.getElementById("message");
-// const buttonElement = document.getElementById("enter-button");
+document.addEventListener("DOMContentLoaded", () => {
+  updateCartDisplay();
 
-// /*detailed/shopping page */
-// /*const addCartElement = document.getElementsByClassName("cart-button");*/
+  // Handle Add to Cart
+  const addToCartBtn = document.querySelector(".cart-button");
+  if (addToCartBtn) {
+      addToCartBtn.addEventListener("click", (event) => {
+          event.preventDefault(); // Prevent redirection
 
-// const addCart = document.querySelector(".cart-button");
-// const cartContainer = document.querySelectorAll(".shopping-container");
-// const cartContainerTwo = document.querySelectorAll(".shopping-container-two");
+          const productId = addToCartBtn.dataset.id;
+          const productTitle = addToCartBtn.dataset.title;
+          const productPrice = parseFloat(addToCartBtn.dataset.price.replace("kr", ""));
+          const productImage = addToCartBtn.dataset.image;
+          const quantity = parseInt(document.querySelector(".input").value);
 
-// let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-
-// const deleteElement = document.getElementsByClassName("delete-button");
-// console.log(deleteElement)
-// for(var i=0; i < deleteElement.length; i++){
-//     var button = deleteElement [i]
-//     button.addEventListener("click", function(event){
-//         var buttonClicked = event.target;
-//         buttonClicked.parentElement.parentElement.remove()
-//     })
-// }
-// /* need to add local storage */
-
-// /* contact page*/
-// buttonElement.addEventListener("click", function(event){
-//     event.preventDefault();
-
-//     let firstName = firstNameInputElement.value;
-//     let lastName = lastNameInputElement.value;
-//     let email = emailInputElement.value;
-//     let subject = subjectInputElement.value;
-//     let message = messageInputElement.value;
-
-//     if(firstName !== ""){
-//         headingElement.innerText = "Thank you"
-//     } else{
-//         headingElement.innerText= "Get in touch"
-//     }
-//     console.log(document.getElementById("enter-button"));
-// })
-
-// /*detailed page */
-
-// /*shopping cart */
-
-// /*detailed page */
-
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-// Function to save cart to localStorage
-function saveCart() {
-  localStorage.setItem("cart", JSON.stringify(cart));
-  updateCartCount();
-}
-
-function updateCartCount() {
-  const cartCount = document.querySelector(".input");
-  if (cartCount) {
-    cartCount.value = cart.reduce((total, item) => total + item.quantity, 0);
+          addToCart(productId, productTitle, productPrice, productImage, quantity);
+      });
   }
-}
 
-// Function to add an item to the cart
-function addToCart(button) {
-  const productData = button.dataset;
-  const quantityInput = document.querySelector(".input");
-  const quantity = parseInt(quantityInput?.value || 1);
+  // Handle Quantity Change & Deletion in Cart Page
+  const cartContainer = document.querySelector(".cart-items");
+  if (cartContainer) {
+      cartContainer.addEventListener("input", (event) => {
+          if (event.target.classList.contains("cart-quantity")) {
+              const productId = event.target.dataset.id;
+              const newQuantity = parseInt(event.target.value);
+              updateCartQuantity(productId, newQuantity);
+          }
+      });
 
-  const item = {
-    id: productData.id,
-    title: productData.title,
-    price: parseFloat(productData.price.replace(",", "").replace("kr", "")),
-    image: productData.image,
-    quantity: quantity,
-  };
-  
+      cartContainer.addEventListener("click", (event) => {
+          if (event.target.classList.contains("delete-button")) {
+              const productId = event.target.dataset.id;
+              removeFromCart(productId);
+          }
+      });
+  }
+});
 
-  const existingItemIndex = cart.findIndex(
-    (cartItem) => cartItem.id === item.id
-  );
+// Function to Add to Cart
+function addToCart(id, title, price, image, quantity) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  if (existingItemIndex > -1) {
-    // Update quantity if item exists
-    cart[existingItemIndex].quantity += quantity;
+  const existingItem = cart.find(item => item.id === id);
+  if (existingItem) {
+      existingItem.quantity += quantity;
   } else {
-    // Add new item if it doesn't exist
-    cart.push(item);
+      cart.push({ id, title, price, image, quantity });
   }
 
-  saveCart();
+  localStorage.setItem("cart", JSON.stringify(cart));
+  window.location.href = 'shopping.html';  // Redirect to shopping page
 }
 
-//  to remove item from cart
-function removeFromCart(index) {
-  cart.splice(index, 1);
-  saveCart();
-  displayCart();
-}
-
-//  to update item quantity
-function updateQuantity(index, newQuantity) {
-  if (newQuantity > 0) {
-    cart[index].quantity = newQuantity;
-    saveCart();
-    displayCart();
-  }
-}
-
-//  to display cart items
-function displayCart() {
+// Function to Display Cart Items
+function updateCartDisplay() {
   const cartContainer = document.querySelector(".cart-items");
   if (!cartContainer) return;
 
-  cartContainer.innerHTML = "";
+  cartContainer.innerHTML = ""; // Clear cart before loading
 
-  if (cart.length === 0) {
-    cartContainer.innerHTML =
-      '<p class="empty-cart">Your shopping bag is empty</p>';
-    return;
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.forEach(item => {
+      const cartItemHTML = `
+          <div class="shopping-container">
+              <figure>
+                  <img src="${item.image}" alt="${item.title}" />
+              </figure>
+              <h6 class="cart-items-title">${item.title}</h6>
+              <p class="cart-items-price">${item.price * item.quantity} kr</p>
+              <input type="number" class="cart-quantity" data-id="${item.id}" value="${item.quantity}" min="1" max="10"/>
+              <button class="delete-button" data-id="${item.id}">
+                  <i class="fa fa-trash-o"></i>
+              </button>
+          </div>
+      `;
+      cartContainer.innerHTML += cartItemHTML;
+  });
+}
+
+// Function to Update Quantity in Cart
+function updateCartQuantity(id, newQuantity) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const item = cart.find(item => item.id === id);
+  if (item) {
+      item.quantity = newQuantity;
   }
 
-  let total = 0;
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartDisplay();
+}
 
-  cart.forEach((item, index) => {
-    total += item.price * item.quantity;
+function removeFromCart(id) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    cartContainer.innerHTML += `
-      <div class="cart-item">
-        <img src="${item.image}" alt="${item.title}" class="cart-item-img"/>
-        <h3 class="cart-item-title">${item.title}</h3>
-        <p class="cart-item-price">${item.price} SEK</p>
-        <input type="number" class="input" value="${item.quantity}" min="1" max="10" 
-               onchange="updateQuantity(${index}, this.value)"/>
-        <button class="delete-button" onclick="removeFromCart(${index})">Remove</button>
-      </div>
-    `;
-  });
+  // Filter out the item with the matching id
+  cart = cart.filter(item => item.id !== id);
 
-  document.querySelector(".cart-total").innerHTML = `Total: ${total} SEK`;
+  // Save the updated cart to localStorage
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  // Update the cart display
+  updateCartDisplay();
 }

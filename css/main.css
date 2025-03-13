@@ -171,6 +171,32 @@ figure {
   text-align: center;
   font-size: 490%;
 }
+
+.spring:hover{
+  animation: slideshow2 10s infinite;
+}
+
+@keyframes slideshow2{
+  0% {background-image: url('../images/spring-campaign.jpg');}
+  5% {background-image: url('../images/spring-campaign.jpg');}
+  10% {background-image: url('../images/spring-campaign.jpg');}
+  15% {background-image: url('../images/spring-campaign.jpg');}
+  20% {background-image: url('../images/spring-campaign.jpg');}
+  25% {background-image: url('../images/spring2.jpg');}
+  30% {background-image: url('../images/spring2.jpg');}
+  45% {background-image: url('../images/spring2.jpg');}
+  50% {background-image: url('../images/spring2.jpg');}
+  55% {background-image: url('../images/spring2.jpg');}
+  60% {background-image: url('../images/spring4.jpg');}
+  65% {background-image: url('../images/spring4.jpg');}
+  70% {background-image: url('../images/spring4.jpg');}
+  75% {background-image: url('../images/spring4.jpg');}
+  80% {background-image: url('../images/spring4.jpg');}
+  85% {background-image: url('../images/spring5.jpg');}
+  90% {background-image: url('../images/spring5.jpg');}
+  95% {background-image: url('../images/spring5.jpg');}
+  100% {background-image: url('../images/spring5.jpg');}
+  }
 /* spring-campaign */
 
 /* summer-campaign */
@@ -179,12 +205,36 @@ figure {
   padding: 10%;
   background-repeat: none;
   background-size: cover;
-  background-position: 5% bottom;
+  background-position: 5% ;
   margin-top: 2vh;
 }
 .summer h3 {
   text-align: center;
   font-size: 490%;
+}
+.summer:hover{
+  animation: slideshow 10s infinite
+}
+@keyframes slideshow{  
+0% {background-image: url('../images/summer-campaign.jpg');}
+5% {background-image: url('../images/summer-campaign.jpg');}
+10% {background-image: url('../images/summer-campaign.jpg');}
+15% {background-image: url('../images/summer-campaign.jpg');}
+20% {background-image: url('../images/summer-campaign.jpg');}
+25% {background-image: url('../images/summer2.jpg');}
+30% {background-image: url('../images/summer2.jpg');}
+45% {background-image: url('../images/summer2.jpg');}
+50% {background-image: url('../images/summer2.jpg');}
+55% {background-image: url('../images/summer2.jpg');}
+60% {background-image: url('../images/summer3.jpg');}
+65% {background-image: url('../images/summer3.jpg');}
+70% {background-image: url('../images/summer3.jpg');}
+75% {background-image: url('../images/summer3.jpg');}
+80% {background-image: url('../images/summer3.jpg');}
+85% {background-image: url('../images/summer4.jpg');}
+90% {background-image: url('../images/summer4.jpg');}
+95% {background-image: url('../images/summer4.jpg');}
+100% {background-image: url('../images/summer4.jpg');}
 }
 /* summer-campaign */
 
@@ -199,6 +249,30 @@ figure {
 .valentine h3 {
   text-align: center;
   font-size: 490%;
+}
+.valentine:hover{
+  animation: slideshow3 10s infinite
+}
+@keyframes slideshow3{
+  0% {background-image: url('../images/valentine-campaign.jpg');}
+  5% {background-image: url('../images/valentine-campaign.jpg');}
+  10% {background-image: url('../images/valentine-campaign.jpg');}
+  15% {background-image: url('../images/valentine-campaign.jpg');}
+  20% {background-image: url('../images/valentine-campaign.jpg');}
+  25% {background-image: url('../images/valentine1.jpg');}
+  30% {background-image: url('../images/valentine1.jpg');}
+  45% {background-image: url('../images/valentine1.jpg');}
+  50% {background-image: url('../images/valentine1.jpg');}
+  55% {background-image: url('../images/valentine1.jpg');}
+  60% {background-image: url('../images/valentine2.jpg');}
+  65% {background-image: url('../images/valentine2.jpg');}
+  70% {background-image: url('../images/valentine2.jpg');}
+  75% {background-image: url('../images/valentine2.jpg');}
+  80% {background-image: url('../images/valentine2.jpg');}
+  85% {background-image: url('../images/valentine3.jpg');}
+  90% {background-image: url('../images/valentine3.jpg');}
+  95% {background-image: url('../images/valentine3.jpg');}
+  100% {background-image: url('../images/valentine3.jpg');}
 }
 /* valentine-campaign */
 

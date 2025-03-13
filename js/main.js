@@ -66,7 +66,7 @@ function updateCartDisplay() {
     const cartItemHTML = `
           <div class="shopping-container">
               <figure>
-                  <img src="${item.image}" alt="${item.title}" />
+                  <img class="cart-items-img" src="${item.image}" alt="${item.title}" />
               </figure>
               <h6 class="cart-items-title">${item.title}</h6>
               <p class="cart-items-price">${item.price * item.quantity} kr</p>

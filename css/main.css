@@ -58,7 +58,7 @@ li {
 }
 
 body {
-  background-color: rgb(227, 218, 194);
+  background-color: black;
 }
 
 .home-effect {
@@ -645,9 +645,11 @@ h3 {
 }
 .right-detailed input {
   width: 50px;
+  color:rgb(119, 98, 70);
 }
 .right-detailed h3 {
   font-size: 3rem;
+  color:rgb(119, 98, 70);
 }
 
 .right-detailed p {
@@ -669,7 +671,7 @@ h3 {
   color: bisque;
 }
 .cart-button {
-  color: black;
+  color:rgb(119, 98, 70);
   width: 100%;
 }
 
@@ -677,6 +679,7 @@ h7 {
   font-size: 150%;
   font-style: oblique;
   font-weight: bolder;
+  color:rgb(119, 98, 70);
 }
 
 .flower-bio {
@@ -752,7 +755,7 @@ summary::marker {
   display: flex;
 }
 .contact-body h1 {
-  color: #000;
+  color: burlywood;
 }
 .contact-left {
   flex: 1;
@@ -766,7 +769,7 @@ summary::marker {
   padding: 5%;
   display: flex;
   flex-direction: column;
-  border: solid black;
+  border: solid burlywood;
 }
 .contact-right h1 {
   font-size: 5rem;
@@ -779,7 +782,7 @@ summary::marker {
 }
 .contact-right p {
   font-size: 1.5rem;
-  color: #555;
+  color: burlywood;
   margin-bottom: 10px;
 }
 form {
@@ -791,28 +794,28 @@ textarea {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #000000;
+  border: 1px solid burlywood;
   border-radius: 5px;
   background-color: rgb(224, 212, 180);
 }
 input::placeholder {
-  color: #000;
+  color: burlywood;
   font-size: 1.2rem;
 }
 textarea::placeholder {
-  color: #000;
+  color:burlywood;
   font-size: 1.2rem;
 }
 button {
   background-color: transparent;
   color: white;
   padding: 10px;
-  border: solid 2px black;
+  border: solid 2px burlywood;
   cursor: pointer;
   transform: transition 0.5s ease-in-out;
 }
 button:hover {
-  background-color: #000000;
+  background-color: burlywood;
 }
 .name-flex {
   display: flex;
@@ -848,91 +851,73 @@ h1 {
   font-size: 6rem;
 }
 
-.about h4 {
-  text-align: center;
-  color: black;
-  font-size: 4rem;
-  font-family: "Ubuntu";
-}
+
 
 .about .about-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  
   padding: 2rem 0;
   padding-bottom: 3rem;
 }
 
 .about .about-content .about-left {
-  flex: 1 1 40rem;
+  justify-self: center;
   position: relative;
 }
 
+
+/*video*/
 .about .about-content .about-left video {
-  width: 50%;
-  border: 1.5rem solid transparent;
-  border-radius: 0.5rem;
-  height: 100%;
-  object-fit: cover;
-}
-.about .about-content .about-left img {
-  width: 50%;
-  border: 1.5rem solid transparent;
-  border-radius: 0.5rem;
-  height: 100%;
-  object-fit: cover;
-}
-.about-right img {
   width: 100%;
+  max-width: 500px;
   border: 1.5rem solid transparent;
   border-radius: 0.5rem;
+  height: auto;
   object-fit: cover;
+  margin-top: 5%;
+}
+.about .about-content .about-right{
+  justify-self: center;
+  text-align: left;
 }
 
+/*our story headline*/
 .about .about-content .about-right h3 {
   font-size: 3rem;
-  color: #333;
-  text-align: center;
+  color: rgb(119, 98, 70);
+  text-align: left;
 }
 
+/*our story text*/
 .about .about-content .about-right p {
-  font-size: 1.5rem;
-  color: #000000;
-  padding-left: 10%;
+  font-size: 2vh;
+  color: rgb(119, 98, 70);
+  
 }
 
 .founders h4 {
-  font-family: "Imperial Script";
+  font-family: cursive;
   font-size: 5rem;
+  margin-top: 10%;
 }
-.founders-content {
-  display: flex;
-  gap: 10%;
+.founders p{
+  color: rgb(119, 98, 70);
+  text-align: center;
 }
 .founder-left {
-  margin-left: 7%;
-  background-image: url(../images/founder-1.JPG);
+  margin-left: 30%;
+  margin-top: -10%;
+  margin-bottom: 10%;
+  background-image: url(../images/founders.jpg);
   padding: 20%;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.founder-right {
-  background-image: url(../images/founder-2.jpg);
-  padding: 20.5%;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 
-.founder-left-name {
-  margin-left: 7%;
-  margin-top: -7%;
-  /* background-image: url(../images/founder-1.JPG); */
-}
-.founder-right-name {
-  margin-left: 20%;
-  margin-top: -7%;
-}
+
+
 /* About us */
 
 /* footer */
@@ -990,13 +975,15 @@ h8 {
 /* footer */
 
 /* shopping page */
+
+h4{
+  color: rgb(119, 98, 70) ;
+}
 #shopping-cart-effect {
   text-decoration: underline;
 }
-.shopping-cart {
-  width: 50%;
-  height: auto;
-}
+
+
 
 .shopping-container {
   display: flex;
@@ -1046,14 +1033,17 @@ h8 {
   color: rgb(119, 98, 70);
   margin: 0;
 }
-
+.cart-items-img{
+  width: 80%;
+}
 .delete-button {
   background: none;
   border: none;
   font-size: 20px;
-  color: #000000;
+  color:rgb(119, 98, 70);
   background-color: none;
 }
+
 
 /* spring page */
 .springpage {

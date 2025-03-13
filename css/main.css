@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Great+Vibes&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Great+Vibes&family=Imperial+Script&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cinzel:wght@400..900&family=Great+Vibes&family=Imperial+Script&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Great+Vibes&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Great+Vibes&family=Imperial+Script&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cinzel:wght@400..900&family=Great+Vibes&family=Imperial+Script&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 /*navigation bar*/
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -18,15 +18,13 @@ header {
   gap: 20vw; */
 }
 
-header li{
-    font-size: 150%;
+header li {
+  font-size: 150%;
 }
 
-
-#logo img{
+#logo img {
   width: 20%;
   margin-left: 40%;
-  
 }
 
 a {
@@ -40,7 +38,7 @@ nav {
   margin-top: -15vh;
   padding-bottom: 25vh;
 }
-nav ul{
+nav ul {
   display: flex;
   list-style: none;
   align-items: center;
@@ -48,11 +46,11 @@ nav ul{
   margin: 0;
   gap: 3vw; /* Adjust spacing */
 }
-nav a{
+nav a {
   color: rgb(119, 98, 70);
   text-decoration: none;
 }
-li{
+li {
   list-style: none;
 }
 .product li {
@@ -63,7 +61,7 @@ body {
   background-color: rgb(227, 218, 194);
 }
 
-.home-effect{
+.home-effect {
   text-decoration: underline;
 }
 /*main*/
@@ -75,36 +73,39 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.home-container img{
- border: solid black;
- border-radius: 0;
- transition: transform 0.5s ease-in-out;
+.home-container img {
+  border: solid black;
+  border-radius: 0;
+  transition: transform 0.5s ease-in-out;
 }
 
-.cls-1,.cls-2,.cls-3,.cls-4{
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-4 {
   fill: transparent;
   stroke: rgb(119, 98, 70);
   stroke-width: 0.5;
-  stroke-dashoffset:50 ;
+  stroke-dashoffset: 50;
   stroke-dasharray: 50;
   animation: orisunanimation 10s ease-in-out;
   animation-iteration-count: 30;
 }
 @keyframes orisunanimation {
-  0%{
+  0% {
     stroke-dashoffset: 50;
   }
-  85%{
+  85% {
     fill: #9a7836;
   }
-  100%{
+  100% {
     fill: #9a7836;
     stroke-dashoffset: 0;
   }
 }
-.overview:hover{
- border: solid rgb(9, 99, 4);
- transform: scale(1.1);
+.overview:hover {
+  border: solid rgb(9, 99, 4);
+  transform: scale(1.1);
 }
 .homepage {
   background-image: url("../images/home-img.jpg");
@@ -149,12 +150,12 @@ figure {
   font-size: 200%;
   border: solid 2px black;
   text-align: center;
-  
- transition: transform 0.5s ease-in-out;
+
+  transition: transform 0.5s ease-in-out;
 }
 
 .see-more:hover {
-  background-color:  rgb(10, 64, 10);
+  background-color: rgb(10, 64, 10);
   cursor: pointer;
 }
 /* see more button */
@@ -172,31 +173,69 @@ figure {
   font-size: 490%;
 }
 
-.spring:hover{
+.spring:hover {
   animation: slideshow2 10s infinite;
 }
 
-@keyframes slideshow2{
-  0% {background-image: url('../images/spring-campaign.jpg');}
-  5% {background-image: url('../images/spring-campaign.jpg');}
-  10% {background-image: url('../images/spring-campaign.jpg');}
-  15% {background-image: url('../images/spring-campaign.jpg');}
-  20% {background-image: url('../images/spring-campaign.jpg');}
-  25% {background-image: url('../images/spring2.jpg');}
-  30% {background-image: url('../images/spring2.jpg');}
-  45% {background-image: url('../images/spring2.jpg');}
-  50% {background-image: url('../images/spring2.jpg');}
-  55% {background-image: url('../images/spring2.jpg');}
-  60% {background-image: url('../images/spring4.jpg');}
-  65% {background-image: url('../images/spring4.jpg');}
-  70% {background-image: url('../images/spring4.jpg');}
-  75% {background-image: url('../images/spring4.jpg');}
-  80% {background-image: url('../images/spring4.jpg');}
-  85% {background-image: url('../images/spring5.jpg');}
-  90% {background-image: url('../images/spring5.jpg');}
-  95% {background-image: url('../images/spring5.jpg');}
-  100% {background-image: url('../images/spring5.jpg');}
+@keyframes slideshow2 {
+  0% {
+    background-image: url("../images/spring-campaign.jpg");
   }
+  5% {
+    background-image: url("../images/spring-campaign.jpg");
+  }
+  10% {
+    background-image: url("../images/spring-campaign.jpg");
+  }
+  15% {
+    background-image: url("../images/spring-campaign.jpg");
+  }
+  20% {
+    background-image: url("../images/spring-campaign.jpg");
+  }
+  25% {
+    background-image: url("../images/spring2.jpg");
+  }
+  30% {
+    background-image: url("../images/spring2.jpg");
+  }
+  45% {
+    background-image: url("../images/spring2.jpg");
+  }
+  50% {
+    background-image: url("../images/spring2.jpg");
+  }
+  55% {
+    background-image: url("../images/spring2.jpg");
+  }
+  60% {
+    background-image: url("../images/spring4.jpg");
+  }
+  65% {
+    background-image: url("../images/spring4.jpg");
+  }
+  70% {
+    background-image: url("../images/spring4.jpg");
+  }
+  75% {
+    background-image: url("../images/spring4.jpg");
+  }
+  80% {
+    background-image: url("../images/spring4.jpg");
+  }
+  85% {
+    background-image: url("../images/spring5.jpg");
+  }
+  90% {
+    background-image: url("../images/spring5.jpg");
+  }
+  95% {
+    background-image: url("../images/spring5.jpg");
+  }
+  100% {
+    background-image: url("../images/spring5.jpg");
+  }
+}
 /* spring-campaign */
 
 /* summer-campaign */
@@ -205,36 +244,74 @@ figure {
   padding: 10%;
   background-repeat: none;
   background-size: cover;
-  background-position: 5% ;
+  background-position: 5%;
   margin-top: 2vh;
 }
 .summer h3 {
   text-align: center;
   font-size: 490%;
 }
-.summer:hover{
-  animation: slideshow 10s infinite
+.summer:hover {
+  animation: slideshow 10s infinite;
 }
-@keyframes slideshow{  
-0% {background-image: url('../images/summer-campaign.jpg');}
-5% {background-image: url('../images/summer-campaign.jpg');}
-10% {background-image: url('../images/summer-campaign.jpg');}
-15% {background-image: url('../images/summer-campaign.jpg');}
-20% {background-image: url('../images/summer-campaign.jpg');}
-25% {background-image: url('../images/summer2.jpg');}
-30% {background-image: url('../images/summer2.jpg');}
-45% {background-image: url('../images/summer2.jpg');}
-50% {background-image: url('../images/summer2.jpg');}
-55% {background-image: url('../images/summer2.jpg');}
-60% {background-image: url('../images/summer3.jpg');}
-65% {background-image: url('../images/summer3.jpg');}
-70% {background-image: url('../images/summer3.jpg');}
-75% {background-image: url('../images/summer3.jpg');}
-80% {background-image: url('../images/summer3.jpg');}
-85% {background-image: url('../images/summer4.jpg');}
-90% {background-image: url('../images/summer4.jpg');}
-95% {background-image: url('../images/summer4.jpg');}
-100% {background-image: url('../images/summer4.jpg');}
+@keyframes slideshow {
+  0% {
+    background-image: url("../images/summer-campaign.jpg");
+  }
+  5% {
+    background-image: url("../images/summer-campaign.jpg");
+  }
+  10% {
+    background-image: url("../images/summer-campaign.jpg");
+  }
+  15% {
+    background-image: url("../images/summer-campaign.jpg");
+  }
+  20% {
+    background-image: url("../images/summer-campaign.jpg");
+  }
+  25% {
+    background-image: url("../images/summer2.jpg");
+  }
+  30% {
+    background-image: url("../images/summer2.jpg");
+  }
+  45% {
+    background-image: url("../images/summer2.jpg");
+  }
+  50% {
+    background-image: url("../images/summer2.jpg");
+  }
+  55% {
+    background-image: url("../images/summer2.jpg");
+  }
+  60% {
+    background-image: url("../images/summer3.jpg");
+  }
+  65% {
+    background-image: url("../images/summer3.jpg");
+  }
+  70% {
+    background-image: url("../images/summer3.jpg");
+  }
+  75% {
+    background-image: url("../images/summer3.jpg");
+  }
+  80% {
+    background-image: url("../images/summer3.jpg");
+  }
+  85% {
+    background-image: url("../images/summer4.jpg");
+  }
+  90% {
+    background-image: url("../images/summer4.jpg");
+  }
+  95% {
+    background-image: url("../images/summer4.jpg");
+  }
+  100% {
+    background-image: url("../images/summer4.jpg");
+  }
 }
 /* summer-campaign */
 
@@ -250,29 +327,67 @@ figure {
   text-align: center;
   font-size: 490%;
 }
-.valentine:hover{
-  animation: slideshow3 10s infinite
+.valentine:hover {
+  animation: slideshow3 10s infinite;
 }
-@keyframes slideshow3{
-  0% {background-image: url('../images/valentine-campaign.jpg');}
-  5% {background-image: url('../images/valentine-campaign.jpg');}
-  10% {background-image: url('../images/valentine-campaign.jpg');}
-  15% {background-image: url('../images/valentine-campaign.jpg');}
-  20% {background-image: url('../images/valentine-campaign.jpg');}
-  25% {background-image: url('../images/valentine1.jpg');}
-  30% {background-image: url('../images/valentine1.jpg');}
-  45% {background-image: url('../images/valentine1.jpg');}
-  50% {background-image: url('../images/valentine1.jpg');}
-  55% {background-image: url('../images/valentine1.jpg');}
-  60% {background-image: url('../images/valentine2.jpg');}
-  65% {background-image: url('../images/valentine2.jpg');}
-  70% {background-image: url('../images/valentine2.jpg');}
-  75% {background-image: url('../images/valentine2.jpg');}
-  80% {background-image: url('../images/valentine2.jpg');}
-  85% {background-image: url('../images/valentine3.jpg');}
-  90% {background-image: url('../images/valentine3.jpg');}
-  95% {background-image: url('../images/valentine3.jpg');}
-  100% {background-image: url('../images/valentine3.jpg');}
+@keyframes slideshow3 {
+  0% {
+    background-image: url("../images/valentine-campaign.jpg");
+  }
+  5% {
+    background-image: url("../images/valentine-campaign.jpg");
+  }
+  10% {
+    background-image: url("../images/valentine-campaign.jpg");
+  }
+  15% {
+    background-image: url("../images/valentine-campaign.jpg");
+  }
+  20% {
+    background-image: url("../images/valentine-campaign.jpg");
+  }
+  25% {
+    background-image: url("../images/valentine1.jpg");
+  }
+  30% {
+    background-image: url("../images/valentine1.jpg");
+  }
+  45% {
+    background-image: url("../images/valentine1.jpg");
+  }
+  50% {
+    background-image: url("../images/valentine1.jpg");
+  }
+  55% {
+    background-image: url("../images/valentine1.jpg");
+  }
+  60% {
+    background-image: url("../images/valentine2.jpg");
+  }
+  65% {
+    background-image: url("../images/valentine2.jpg");
+  }
+  70% {
+    background-image: url("../images/valentine2.jpg");
+  }
+  75% {
+    background-image: url("../images/valentine2.jpg");
+  }
+  80% {
+    background-image: url("../images/valentine2.jpg");
+  }
+  85% {
+    background-image: url("../images/valentine3.jpg");
+  }
+  90% {
+    background-image: url("../images/valentine3.jpg");
+  }
+  95% {
+    background-image: url("../images/valentine3.jpg");
+  }
+  100% {
+    background-image: url("../images/valentine3.jpg");
+  }
 }
 /* valentine-campaign */
 
@@ -284,33 +399,35 @@ footer {
 }
 
 /* media query */
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 340px) and (max-width: 500px) {
   /* header and nav */
   header {
     display: flex;
     align-items: center;
-    gap: 0.01%;
   }
 
   #logo {
     font-size: 60%;
   }
   nav a {
-    font-size: 35%;
+    font-size: 20%;
     font-weight: 700;
   }
   /* header and nav */
   /* homepage stuff */
   .homepage {
     background-image: url("../images/home-img.jpg");
-    padding: 40%;
-    background-size: contain;
+    padding: 20%;
+    background-size: cover;
     background-repeat: none;
   }
 
   .home-container {
     display: grid;
     grid-template-columns: 1fr;
+    width: 80%;
+    height: 80%;
+    margin-left: 15vw;
   }
   /* homepage stuff */
   /* see-more button */
@@ -347,6 +464,54 @@ footer {
     font-size: 190%;
   }
   /* campaign */
+  /* productpage */
+  .product-container ov {
+    display: grid;
+    grid-template-columns:
+      repeat 2,
+      1fr;
+    grid-template-rows:
+      repeat 2,
+      1fr;
+  }
+  /* productpage */
+  /* footer */
+  .footer {
+    margin-left: 7%;
+    padding-top: 5%;
+  }
+  .footer .bx-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: -10vw;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .bx a {
+    font-size: 10rem;
+  }
+
+  .footer .bx-container .bx a:hover {
+    color: #304631;
+    text-decoration: underline;
+  }
+
+  .footer .credit {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #000;
+    border-top: 0.1rem solid #555454;
+  }
+
+  .footer .credit span {
+    color: #304631;
+  }
+  /* footer */
 }
 
 /* media query */
@@ -374,7 +539,7 @@ footer {
     background-repeat: none;
   }
 
-  .product-container{
+  .product-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -417,23 +582,27 @@ footer {
 /* media query */
 
 /* product page */
-.product-effect{
+.product-effect {
   text-decoration: underline;
 }
-.product-container{
+.product-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.product-container img{
- border: solid black;
- border-radius: 0;
- transition: transform 0.5s ease-in-out;
+.product-name {
+  color: antiquewhite;
 }
 
-.overview:hover{
- border: solid rgb(9, 99, 4);
- transform: scale(1.1);
+.product-container img {
+  border: solid black;
+  border-radius: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.overview:hover {
+  border: solid rgb(9, 99, 4);
+  transform: scale(1.1);
 }
 h2 {
   text-align: center;
@@ -474,51 +643,50 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.right-detailed input{
- width: 50px;
+.right-detailed input {
+  width: 50px;
 }
-.right-detailed h3{
-font-size: 3rem;
-}
-
-.right-detailed p{
-font-size: 1.5rem;
-}
-.right-detailed li{
-font-size: 1.5rem;
+.right-detailed h3 {
+  font-size: 3rem;
 }
 
-#title{
+.right-detailed p {
+  font-size: 1.5rem;
+}
+.right-detailed li {
+  font-size: 1.5rem;
+}
+
+#title {
   font-size: 4rem;
   font-family: "Cinzel";
 }
 
-.add-cart{
+.add-cart {
   display: block;
-  
 }
-.add-cart :hover{
+.add-cart :hover {
   color: bisque;
 }
-.cart-button{
+.cart-button {
   color: black;
   width: 100%;
 }
 
-h7{
+h7 {
   font-size: 150%;
   font-style: oblique;
   font-weight: bolder;
 }
 
-.flower-bio{
+.flower-bio {
   font-size: 0.9rem;
-  color:rgb(119, 98, 70);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(119, 98, 70);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.detail-info{
+.detail-info {
   font-size: 10%;
-  color:rgb(119, 98, 70);
+  color: rgb(119, 98, 70);
 }
 /* detailed page */
 
@@ -530,8 +698,8 @@ h4 {
   font-family: "Ubuntu";
 }
 
-#faq-effect{
-    text-decoration: underline;
+#faq-effect {
+  text-decoration: underline;
 }
 
 .faq {
@@ -545,22 +713,21 @@ h4 {
 .faq-header {
   padding: 10%;
   background-color: rgb(1, 38, 1);
-  
 }
 
 .faq-item {
-    background-color: #efead4; 
-    border-radius: 10px; 
-    padding: 15px;
-    margin-bottom: 10px; 
-    border: 1px solid #ccc; 
-    cursor: pointer; 
-    
-    font-weight: bold;
-    font-size: 16px;
+  background-color: #efead4;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+
+  font-weight: bold;
+  font-size: 16px;
 }
-summary::marker{
-    color: rgb(78, 134, 78);
+summary::marker {
+  color: rgb(78, 134, 78);
 }
 
 .answer {
@@ -578,19 +745,19 @@ summary::marker{
 /* FAQ page */
 
 /* Contact Us Page */
-.contact-effect{
+.contact-effect {
   text-decoration: underline;
 }
-.contact-body{
+.contact-body {
   display: flex;
 }
-.contact-body  h1{
+.contact-body h1 {
   color: #000;
 }
 .contact-left {
   flex: 1;
   height: 100vh;
-  background-image: url("../images/sideflower.jpg"); 
+  background-image: url("../images/sideflower.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -602,54 +769,54 @@ summary::marker{
   border: solid black;
 }
 .contact-right h1 {
-font-size: 5rem;
-font-weight: normal;
-
+  font-size: 5rem;
+  font-weight: normal;
 }
 
 .contact-right span {
-font-size: 7rem;
-font-family: "Imperial Script";
+  font-size: 7rem;
+  font-family: "Imperial Script";
 }
 .contact-right p {
-font-size: 1.5rem;
-color: #555;
-margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 10px;
 }
 form {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-input, textarea {
-width: 100%;
-padding: 10px;
-margin: 10px 0;
-border: 1px solid #000000;
-border-radius: 5px;
-background-color: rgb(224, 212, 180);
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: rgb(224, 212, 180);
 }
-input::placeholder{
+input::placeholder {
   color: #000;
   font-size: 1.2rem;
 }
-textarea::placeholder{
+textarea::placeholder {
   color: #000;
   font-size: 1.2rem;
 }
 button {
-background-color: transparent;
-color: white;
-padding: 10px;
-border: solid 2px black;
-cursor: pointer;
-transform: transition 0.5s ease-in-out;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border: solid 2px black;
+  cursor: pointer;
+  transform: transition 0.5s ease-in-out;
 }
 button:hover {
-background-color: #000000;
+  background-color: #000000;
 }
 .name-flex {
-display: flex;
-gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 /* Contact Us Page */
@@ -662,7 +829,7 @@ gap: 10px;
   background-size: cover;
   background-repeat: none;
 }
-.about-effect{
+.about-effect {
   text-decoration: underline;
 }
 h1 {
@@ -671,92 +838,84 @@ h1 {
   font-size: 520%;
 }
 
-.about-us-background span{
+.about-us-background span {
   font-family: "Imperial Script";
   font-size: 8rem;
 }
 
-.about span{
+.about span {
   font-family: "Imperial Script";
   font-size: 6rem;
 }
 
- .about h4 {
+.about h4 {
   text-align: center;
   color: black;
   font-size: 4rem;
   font-family: "Ubuntu";
 }
 
-.about .about-content{
+.about .about-content {
   display: flex;
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
   padding: 2rem 0;
   padding-bottom: 3rem;
-  }
-  
-  .about .about-content .about-left {
+}
+
+.about .about-content .about-left {
   flex: 1 1 40rem;
   position: relative;
-  }
-  
-  .about .about-content .about-left video{
-      width: 50%;
-      border: 1.5rem solid transparent;
-      border-radius: .5rem;
-      height: 100%;
-      object-fit: cover;
-  
-  
-  }
-  .about .about-content .about-left img{
-      width: 50%;
-      border: 1.5rem solid transparent;
-      border-radius: .5rem;
-      height: 100%;
-      object-fit: cover;
-  
-  
-  }
-   .about-right img{
-      width: 100%;
-      border: 1.5rem solid transparent;
-      border-radius: .5rem;
-      object-fit: cover;
-  
-  
-  }
-  
-  .about .about-content .about-right h3{
-    font-size: 3rem ;
-    color:#333 ;
-    text-align: center;
 }
 
-.about .about-content .about-right p{
-    font-size: 1.5rem ;
-    color:#000000 ;
-    padding-left: 10%;
+.about .about-content .about-left video {
+  width: 50%;
+  border: 1.5rem solid transparent;
+  border-radius: 0.5rem;
+  height: 100%;
+  object-fit: cover;
+}
+.about .about-content .about-left img {
+  width: 50%;
+  border: 1.5rem solid transparent;
+  border-radius: 0.5rem;
+  height: 100%;
+  object-fit: cover;
+}
+.about-right img {
+  width: 100%;
+  border: 1.5rem solid transparent;
+  border-radius: 0.5rem;
+  object-fit: cover;
 }
 
-.founders h4{
-  font-family:"Imperial Script";
+.about .about-content .about-right h3 {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+}
+
+.about .about-content .about-right p {
+  font-size: 1.5rem;
+  color: #000000;
+  padding-left: 10%;
+}
+
+.founders h4 {
+  font-family: "Imperial Script";
   font-size: 5rem;
 }
-.founders-content{
+.founders-content {
   display: flex;
   gap: 10%;
 }
 .founder-left {
   margin-left: 7%;
- background-image: url(../images/founder-1.JPG);
- padding: 20%;
- background-repeat: no-repeat;
- background-size: contain;
- 
-  
+  background-image: url(../images/founder-1.JPG);
+  padding: 20%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .founder-right {
   background-image: url(../images/founder-2.jpg);
@@ -768,8 +927,7 @@ h1 {
 .founder-left-name {
   margin-left: 7%;
   margin-top: -7%;
- /* background-image: url(../images/founder-1.JPG); */
-  
+  /* background-image: url(../images/founder-1.JPG); */
 }
 .founder-right-name {
   margin-left: 20%;
@@ -778,99 +936,84 @@ h1 {
 /* About us */
 
 /* footer */
-.footer{
+.footer {
   margin-left: 7%;
   padding-top: 5%;
 }
-.footer .bx-container{
+.footer .bx-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
 
-.footer .bx-container .bx{
-flex: 1 1 25rem;
+.footer .bx-container .bx {
+  flex: 1 1 25rem;
 }
 
-.footer .bx-container .bx h3{
-color: #446246;
-font-size: 2.5rem;
-padding: 1rem 0;
+.footer .bx-container .bx h3 {
+  color: #446246;
+  font-size: 2.5rem;
+  padding: 1rem 0;
 }
 
-.footer .bx-container .bx a{
+.footer .bx-container .bx a {
   display: block;
   color: rgb(10, 64, 10);
-font-size: 1.5rem;
-padding: 1rem 0;
+  font-size: 1.5rem;
+  padding: 1rem 0;
 }
 
-.footer .bx-container .bx a:hover{
+.footer .bx-container .bx a:hover {
   color: #304631;
   text-decoration: underline;
 }
 
-.footer .credit{
+.footer .credit {
   text-align: center;
-  padding:1.5rem ;
+  padding: 1.5rem;
   margin-top: 1.5rem;
-  padding-top:2.5rem ;
+  padding-top: 2.5rem;
   font-size: 2rem;
   color: #000;
-  border-top: .1rem solid #555454;
+  border-top: 0.1rem solid #555454;
 }
 
-.footer .credit span{
+.footer .credit span {
   color: #304631;
 }
 
-h8{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h8 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bolder;
 }
 
 /* footer */
 
 /* shopping page */
-#shopping-cart-effect{
+#shopping-cart-effect {
   text-decoration: underline;
 }
-.shopping-cart{
+.shopping-cart {
   width: 50%;
   height: auto;
 }
 
-
-
-.shopping-container{
+.shopping-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10%;
   padding: 10%;
-
 }
-.shopping-container-two{
+.shopping-container-two {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10%;
   padding: 10%;
-
 }
 
-.first-item{
-  width: 50%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10%;
-  padding: 10%;
-
-}
-
-.second-item{
+.first-item {
   width: 50%;
   height: auto;
   display: flex;
@@ -879,36 +1022,45 @@ h8{
   gap: 10%;
   padding: 10%;
 }
-.input-box{
-  width: 25% ;
+
+.second-item {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  padding: 10%;
+}
+.input-box {
+  width: 25%;
   height: 10%;
 }
-.cart-items-title{
-  font-size: 150%;
-  color: rgb(119, 98, 70);
-  margin: 0;
-
-}
-.cart-items-price{
+.cart-items-title {
   font-size: 150%;
   color: rgb(119, 98, 70);
   margin: 0;
 }
+.cart-items-price {
+  font-size: 150%;
+  color: rgb(119, 98, 70);
+  margin: 0;
+}
 
-.delete-button{
+.delete-button {
   background: none;
   border: none;
-  font-size:20px;
+  font-size: 20px;
   color: #000000;
   background-color: none;
 }
 
 /* spring page */
-.springpage{
+.springpage {
   background-image: url("../images/spring.jpg");
   background-attachment: fixed;
   padding: 10%;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 /* spring page */

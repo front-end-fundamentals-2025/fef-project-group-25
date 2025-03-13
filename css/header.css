@@ -14,7 +14,7 @@ a {
     align-items: center;
     padding: 0;
     margin: 0;
-    gap: 3vw; /* Adjust spacing */
+    gap: 3vw;
   }
   nav a{
     color: rgb(119, 98, 70);

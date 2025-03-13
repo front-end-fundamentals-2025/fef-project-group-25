@@ -56,7 +56,7 @@ li{
 }
 
 body {
-  background-color: rgb(224, 212, 180);
+  background-color: rgb(227, 218, 194);
 }
 
 .home-effect{
@@ -104,6 +104,7 @@ body {
 }
 .homepage {
   background-image: url("../images/home-img.jpg");
+  background-attachment: fixed;
   padding: 10%;
   background-size: cover;
   background-repeat: none;
@@ -576,8 +577,10 @@ gap: 10px;
 /* Contact Us Page */
 /* About us */
 .about-us-background {
-  background-image: url("../images/about-us-image.jpg");
-  padding: 15%;
+  background-image: url("../images/about.jpg");
+  background-attachment: fixed;
+  padding: 17%;
+  margin-top: -25vh;
   background-size: cover;
   background-repeat: none;
 }
@@ -822,6 +825,7 @@ h8{
 /* spring page */
 .springpage{
   background-image: url("../images/spring.jpg");
+  background-attachment: fixed;
   padding: 10%;
   background-size:cover;
   background-repeat: no-repeat;
@@ -832,6 +836,7 @@ h8{
 
 .summerpage {
   background-image: url("../images/summer.jpg");
+  background-attachment: fixed;
   padding: 10%;
   background-size: cover;
   background-repeat: none;
@@ -842,6 +847,7 @@ h8{
 
 .valentinepage {
   background-image: url("../images/valentine.jpg");
+  background-attachment: fixed;
   padding: 10%;
   background-size: cover;
   background-repeat: none;

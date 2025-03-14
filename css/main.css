@@ -285,7 +285,7 @@ footer {
 }
 
 /* media query */
-@media screen and (min-width: 340px) and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
   /* header and nav */
   header {
     align-items: center;
@@ -543,40 +543,45 @@ font-size: 2rem !important;
   }
   /* footer */
 }
-
-/* media query */
-@media screen and (min-width: 501px) and (max-width: 1100px) {
+@media screen and (min-width: 501px) and (max-width: 950px) {
   /* header and nav */
   header {
-    display: flex;
     align-items: center;
-    gap: 0.01%;
   }
 
   #logo {
     font-size: 60%;
   }
   nav a {
-    font-size: 35%;
+    font-size: 20%;
     font-weight: 700;
   }
   /* header and nav */
   /* homepage stuff */
   .homepage {
     background-image: url("../images/home-img.jpg");
-    padding: 40%;
-    background-size: contain;
+    padding: 20%;
+    background-size: cover;
+    background-repeat: none;
+  }
+  .aboutpage {
+    margin-top: 10vh;
+    padding: 20%;
+    background-size: contain !important;
     background-repeat: none;
   }
 
-  .product-container {
+  .home-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    width: 80%;
+    height: 80%;
+    margin-left: 15vw;
   }
   /* homepage stuff */
   /* see-more button */
   .see-more {
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 42%;
     background-color: rgb(99, 168, 99);
     color: wheat;
@@ -608,8 +613,196 @@ font-size: 2rem !important;
     font-size: 190%;
   }
   /* campaign */
+  /* productpage */
+  .product-container  {
+    display: grid;
+    grid-template-columns:1fr 1fr !important;
+    grid-template-rows:1fr 1fr!important;
+    margin-left: 2vw;
+  }
+  .product-container h2{
+    font-size: 1rem;
+    margin-left: -2vw;
+  }
+  /* productpage */
+  /* faq */
+  .faq-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+  }
+  .faq {
+    display: grid !important;
+    grid-template-columns: 1fr!important;;
+    grid-template-columns: 1fr!important;;
+    gap: 2%;
+    margin-top: 2%;
+    align-items: center;
+  }
+  /* faq */
+  /* contact */
+  .contact-body {
+    display: inline-table !important;
+  }
+  .contact-effect {
+    text-decoration: underline;
+  }
+  
+  .contact-body h1 {
+    color: burlywood;
+  }
+  .contact-left {flex: 1;
+    width: 150% !important;
+    background-image: url("../images/sideflower.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .contact-right {
+    flex-direction: column;
+    border: solid burlywood;
+    width: 140% !important;
+  }
+  .contact-right h1 {
+    font-size: 2rem !important;
+    font-weight: normal;
+  }
+  
+  .contact-right span {
+    font-size: 3rem !important;
+    font-family: "Imperial Script";
+  }
+  .contact-right p {
+    font-size: 1rem !important;
+    color: burlywood;
+    margin-bottom: 10px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  input,
+  textarea {
+    width: 80% !important;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid burlywood;
+    border-radius: 5px;
+    background-color: rgb(224, 212, 180);
+  }
+  input::placeholder {
+    color: rgb(0, 0, 0) !important;
+    font-size: 1.2rem;
+  }
+  textarea::placeholder {
+    color:rgb(0, 0, 0) !important;
+    font-size: 1.2rem;
+  }
+  button {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border: solid 2px burlywood;
+    cursor: pointer;
+    transform: transition 0.5s ease-in-out;
+  }
+  button:hover {
+    background-color: burlywood;
+  }
+  .name-flex {
+    display: flex;
+    gap: 10px;
+  }
+  /* contact */
+  /* about */
+  .about .about-content{
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr !important;
+  }
+  .about .about-content .about-right {
+
+  }
+  .about .about-content .about-right h3  {
+text-align: center !important;
+font-size: 2rem !important;
+  }
+
+  .about .about-content .about-right span  {
+text-align: center !important;
+font-size: 2rem !important;
+  }
+  .about .about-content .about-right p {
+    text-align: center !important;
+    margin-left: 5vw !important;
+    font-size: 0.75rem !important;
+  }
+  .founders h4{
+font-size: 2rem !important;
+  }
+  /* about */
+  /* detailed page */
+  .left-detailed{
+    margin-top: -10vh;
+    margin-left: 20vw;
+    width: 190%;
+  }
+  .right-detailed{
+    margin-top: 20vh;
+  text-align: center;
+  margin-left: -40vw;
+  }
+
+  .right-detailed h3{
+    font-size: 1.5rem !important;
+  }
+
+  .right-detailed p{
+    font-size: 0.75rem !important;
+  }
+
+  .right-detailed li{
+    font-size: 0.75rem !important;
+  }
+  /* detailed page */
+  /* footer */
+  .footer {
+    margin-left: 7%;
+    padding-top: 5%;
+  }
+  .footer .bx-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: -10vw;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .bx a {
+    font-size: 10rem;
+  }
+
+  .footer .bx-container .bx a:hover {
+    color: #304631;
+    text-decoration: underline;
+  }
+
+  .footer .credit {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #000;
+    border-top: 0.1rem solid #555454;
+  }
+
+  .footer .credit span {
+    color: #304631;
+  }
+  /* footer */
 }
-/* media query */
+
 
 /* product page */
 .product-effect {

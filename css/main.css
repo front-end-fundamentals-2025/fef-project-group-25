@@ -460,8 +460,8 @@ footer {
     grid-template-columns: 1fr !important;
     grid-template-rows: 1fr !important;
   }
-  .about .about-content .about-right {
-
+  .about header li{
+    font-size: 100%;
   }
   .about .about-content .about-right h3  {
 text-align: center !important;
@@ -482,15 +482,18 @@ font-size: 2rem !important;
   }
   /* about */
   /* detailed page */
+  .detailed-page{
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 0.5fr 1fr !important;
+  }
   .left-detailed{
-    margin-top: -10vh;
     margin-left: 20vw;
-    width: 190%;
+    width: 100%;
   }
   .right-detailed{
-    margin-top: 20vh;
   text-align: center;
-  margin-left: -40vw;
+  margin-left: 15vw;
   }
 
   .right-detailed h3{
@@ -505,8 +508,24 @@ font-size: 2rem !important;
     font-size: 0.75rem !important;
   }
   /* detailed page */
+  /*shopping page*/
+  .shopping-container{
+    flex-direction: column;
+    gap: 5%;
+    padding: 5%;
+  }
+  .cart-items-img{
+    max-width: 120px;
+  }
+  h4{
+    margin-top: -20%;
+  }
+
+
   /* footer */
   .footer {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
     margin-left: 7%;
     padding-top: 5%;
   }
@@ -517,6 +536,10 @@ font-size: 2rem !important;
     margin-left: -10vw;
     text-align: center;
     font-size: 1rem;
+  }
+  .footer .bx-container .bx a{
+    font-size: 0.5rem !important;
+
   }
 
   .bx a {
@@ -764,6 +787,27 @@ font-size: 2rem !important;
     font-size: 0.75rem !important;
   }
   /* detailed page */
+
+  /*shopping page*/
+  .shopping-container{
+    flex-direction: column;
+    gap: 5%;
+    padding: 5%;
+  }
+  .cart-items-img{
+    margin-bottom: 10%;
+    max-width: 120px;
+  }
+  .cart-items-title{
+    margin-bottom: 20%;
+
+  }
+  h4{
+    margin-top: -20%;
+  }
+  /*shopping page*/
+
+
   /* footer */
   .footer {
     margin-left: 7%;
@@ -1213,6 +1257,7 @@ h8 {
 
 h4{
   color: rgb(119, 98, 70) ;
+  margin-top: -20%;
 }
 #shopping-cart-effect {
   text-decoration: underline;
@@ -1277,7 +1322,9 @@ h4{
   font-size: 20px;
   color:rgb(119, 98, 70);
   background-color: none;
+  cursor: pointer;
 }
+
 
 
 /* spring page */

@@ -61,6 +61,7 @@ function updateCartDisplay() {
 
   cartContainer.innerHTML = ""; // Clear cart before loading
 
+  // the next 18 lines of code was added by courtesy of Layla Abdulahi
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   cart.forEach((item) => {
     const cartItemHTML = `

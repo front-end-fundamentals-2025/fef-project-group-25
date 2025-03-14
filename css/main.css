@@ -89,6 +89,7 @@ body {
   stroke-dashoffset: 50;
   stroke-dasharray: 50;
   animation: orisunanimation 10s ease-in-out;
+  /* the following line of code was adapted from https://www.w3schools.com/cssref/css3_pr_animation-iteration-count.php 11/03/2025  */
   animation-iteration-count: 30;
 }
 @keyframes orisunanimation {
@@ -178,7 +179,6 @@ figure {
   background-image: url(../images/spring2.jpg);
 }
 
-
 /* spring-campaign */
 
 /* summer-campaign */
@@ -196,7 +196,7 @@ figure {
 }
 .summer:hover {
   transition: 1s ease-in-out;
- background-image: url(../images/summer2.jpg);
+  background-image: url(../images/summer2.jpg);
 }
 /* summer-campaign */
 
@@ -298,13 +298,13 @@ footer {
   }
   /* campaign */
   /* productpage */
-  .product-container  {
+  .product-container {
     display: grid;
-    grid-template-columns:1fr !important;
-    grid-template-rows:1fr !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr !important;
     margin-left: 2vw;
   }
-  .product-container h2{
+  .product-container h2 {
     font-size: 1rem;
     margin-left: -2vw;
   }
@@ -313,12 +313,12 @@ footer {
   .faq-title {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:  1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   .faq {
     display: grid !important;
-    grid-template-columns: 1fr!important;;
-    grid-template-columns: 1fr!important;;
+    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr !important;
     gap: 2%;
     margin-top: 2%;
     align-items: center;
@@ -336,11 +336,12 @@ footer {
   .contact-effect {
     text-decoration: underline;
   }
-  
+
   .contact-body h1 {
     color: burlywood;
   }
-  .contact-left {flex: 1;
+  .contact-left {
+    flex: 1;
     height: 50vh !important;
     background-image: url("../images/sideflower.jpg");
     background-size: cover;
@@ -354,7 +355,7 @@ footer {
     font-size: 2rem !important;
     font-weight: normal;
   }
-  
+
   .contact-right span {
     font-size: 3rem !important;
     font-family: "Imperial Script";
@@ -382,7 +383,7 @@ footer {
     font-size: 1.2rem;
   }
   textarea::placeholder {
-    color:rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) !important;
     font-size: 1.2rem;
   }
   button {
@@ -402,85 +403,82 @@ footer {
   }
   /* contact */
   /* about */
-  .about .about-content{
+  .about .about-content {
     display: grid;
     grid-template-columns: 1fr !important;
     grid-template-rows: 1fr !important;
   }
-  .about header li{
+  .about header li {
     font-size: 100%;
   }
-  .about .about-content .about-right h3  {
-text-align: center !important;
-font-size: 2rem !important;
+  .about .about-content .about-right h3 {
+    text-align: center !important;
+    font-size: 2rem !important;
   }
 
-  .about .about-content .about-right span  {
-text-align: center !important;
-font-size: 2rem !important;
+  .about .about-content .about-right span {
+    text-align: center !important;
+    font-size: 2rem !important;
   }
   .about .about-content .about-right p {
     text-align: center !important;
     margin-left: 5vw !important;
     font-size: 0.75rem !important;
   }
-  .founders h4{
-font-size: 2rem !important;
+  .founders h4 {
+    font-size: 2rem !important;
   }
   /* about */
   /* detailed page */
-  .detailed-page{
+  .detailed-page {
     display: grid;
     grid-template-columns: 1fr !important;
     grid-template-rows: 0.5fr 1fr !important;
   }
 
-  .left-detailed{
+  .left-detailed {
     margin-left: 20vw;
     width: 100%;
   }
-  .right-detailed{
+  .right-detailed {
     margin-top: 20vh;
-  text-align: center;
-  margin-left: 15vw;
+    text-align: center;
+    margin-left: 15vw;
   }
 
-  .right-detailed h3{
+  .right-detailed h3 {
     font-size: 1.5rem !important;
   }
 
-  .right-detailed p{
+  .right-detailed p {
     font-size: 0.75rem !important;
   }
 
-  .right-detailed li{
+  .right-detailed li {
     font-size: 0.75rem !important;
   }
   /* detailed page */
-    /*shopping page*/
-    .shopping-container{
-      flex-direction: column;
-      gap: 5%;
-      padding: 5%;
-    }
-    .cart-items-img{
-      max-width: 120px;
-    }
-    h4{
-      margin-top: -20%;
-    }
-  
-  
-  
+  /*shopping page*/
+  .shopping-container {
+    flex-direction: column;
+    gap: 5%;
+    padding: 5%;
+  }
+  .cart-items-img {
+    max-width: 120px;
+  }
+  h4 {
+    margin-top: -20%;
+  }
+
   /* footer */
-  
+
   .footer {
     margin-left: 7%;
     padding-top: 5%;
   }
-  .footer .bx-container .bx a{
+  .footer .bx-container .bx a {
     font-size: 0.5rem !important;
-
   }
 
   .bx a {
@@ -578,13 +576,13 @@ font-size: 2rem !important;
   }
   /* campaign */
   /* productpage */
-  .product-container  {
+  .product-container {
     display: grid;
-    grid-template-columns:1fr 1fr !important;
-    grid-template-rows:1fr 1fr!important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 1fr 1fr !important;
     margin-left: 2vw;
   }
-  .product-container h2{
+  .product-container h2 {
     font-size: 1rem;
     margin-left: -2vw;
   }
@@ -593,12 +591,12 @@ font-size: 2rem !important;
   .faq-title {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:  1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   .faq {
     display: grid !important;
-    grid-template-columns: 1fr 1fr!important;;
-    grid-template-columns: 1fr 1fr !important;;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: 1fr 1fr !important;
     gap: 2%;
     margin-top: 2%;
     align-items: center;
@@ -616,11 +614,12 @@ font-size: 2rem !important;
   .contact-effect {
     text-decoration: underline;
   }
-  
+
   .contact-body h1 {
     color: burlywood;
   }
-  .contact-left {flex: 1;
+  .contact-left {
+    flex: 1;
     width: 150% !important;
     background-image: url("../images/sideflower.jpg");
     background-size: cover;
@@ -635,7 +634,7 @@ font-size: 2rem !important;
     font-size: 2rem !important;
     font-weight: normal;
   }
-  
+
   .contact-right span {
     font-size: 3rem !important;
     font-family: "Imperial Script";
@@ -663,7 +662,7 @@ font-size: 2rem !important;
     font-size: 1.2rem;
   }
   textarea::placeholder {
-    color:rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) !important;
     font-size: 1.2rem;
   }
   button {
@@ -683,77 +682,71 @@ font-size: 2rem !important;
   }
   /* contact */
   /* about */
-  .about .about-content{
+  .about .about-content {
     display: grid;
     grid-template-columns: 1fr !important;
     grid-template-rows: 1fr !important;
   }
-  .about .about-content .about-right {
-
-  }
-  .about .about-content .about-right h3  {
-text-align: center !important;
-font-size: 2rem !important;
+  .about .about-content .about-right h3 {
+    text-align: center !important;
+    font-size: 2rem !important;
   }
 
-  .about .about-content .about-right span  {
-text-align: center !important;
-font-size: 2rem !important;
+  .about .about-content .about-right span {
+    text-align: center !important;
+    font-size: 2rem !important;
   }
   .about .about-content .about-right p {
     text-align: center !important;
     margin-left: 5vw !important;
     font-size: 0.75rem !important;
   }
-  .founders h4{
-font-size: 2rem !important;
+  .founders h4 {
+    font-size: 2rem !important;
   }
   /* about */
   /* detailed page */
-  .left-detailed{
+  .left-detailed {
     margin-top: -10vh;
     margin-left: 20vw;
     width: 190%;
   }
-  .right-detailed{
+  .right-detailed {
     margin-top: 20vh;
-  text-align: center;
-  margin-left: -40vw;
+    text-align: center;
+    margin-left: -40vw;
   }
 
-  .right-detailed h3{
+  .right-detailed h3 {
     font-size: 1.5rem !important;
   }
 
-  .right-detailed p{
+  .right-detailed p {
     font-size: 0.75rem !important;
   }
 
-  .right-detailed li{
+  .right-detailed li {
     font-size: 0.75rem !important;
   }
   /* detailed page */
-  
+
   /*shopping page*/
-  .shopping-container{
+  .shopping-container {
     flex-direction: column;
     gap: 5%;
     padding: 5%;
   }
-  .cart-items-img{
+  .cart-items-img {
     margin-bottom: 10%;
     max-width: 120px;
   }
-  .cart-items-title{
+  .cart-items-title {
     margin-bottom: 20%;
-
   }
-  h4{
+  h4 {
     margin-top: -20%;
   }
   /*shopping page*/
-
-
 
   /* footer */
   .footer {
@@ -761,14 +754,13 @@ font-size: 2rem !important;
     padding-top: 5%;
   }
   .footer .bx-container {
-    display:flex;
+    display: flex;
     flex-wrap: nowrap !important;
     text-align: center;
     font-size: 1rem;
   }
-  .footer .bx-container .bx a{
+  .footer .bx-container .bx a {
     font-size: 1rem !important;
-
   }
   .footer {
     margin-left: 7%;
@@ -807,7 +799,6 @@ font-size: 2rem !important;
   }
   /* footer */
 }
-
 
 /* product page */
 .product-effect {
@@ -873,11 +864,11 @@ h3 {
 }
 .right-detailed input {
   width: 50px;
-  color:rgb(119, 98, 70);
+  color: rgb(119, 98, 70);
 }
 .right-detailed h3 {
   font-size: 3rem;
-  color:rgb(119, 98, 70);
+  color: rgb(119, 98, 70);
 }
 
 .right-detailed p {
@@ -899,7 +890,7 @@ h3 {
   color: bisque;
 }
 .cart-button {
-  color:rgb(119, 98, 70);
+  color: rgb(119, 98, 70);
   width: 100%;
 }
 
@@ -907,7 +898,7 @@ h7 {
   font-size: 150%;
   font-style: oblique;
   font-weight: bolder;
-  color:rgb(119, 98, 70);
+  color: rgb(119, 98, 70);
 }
 
 .flower-bio {
@@ -928,8 +919,8 @@ h4 {
   font-size: 200%;
   font-family: "Ubuntu";
 }
-.faq-background{
-  background-image: url('../images/faq.jpg');
+.faq-background {
+  background-image: url("../images/faq.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -1046,7 +1037,7 @@ input::placeholder {
   font-size: 1.2rem;
 }
 textarea::placeholder {
-  color:burlywood;
+  color: burlywood;
   font-size: 1.2rem;
 }
 button {
@@ -1094,13 +1085,11 @@ h1 {
   font-size: 6rem;
 }
 
-
-
 .about .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  
+
   padding: 2rem 0;
   padding-bottom: 3rem;
 }
@@ -1109,7 +1098,6 @@ h1 {
   justify-self: center;
   position: relative;
 }
-
 
 /*video*/
 .about .about-content .about-left video {
@@ -1121,7 +1109,7 @@ h1 {
   object-fit: cover;
   margin-top: 5%;
 }
-.about .about-content .about-right{
+.about .about-content .about-right {
   justify-self: center;
   text-align: left;
 }
@@ -1137,7 +1125,6 @@ h1 {
 .about .about-content .about-right p {
   font-size: 2vh;
   color: rgb(119, 98, 70);
-  
 }
 
 .founders h4 {
@@ -1145,7 +1132,7 @@ h1 {
   font-size: 5rem;
   margin-top: 10%;
 }
-.founders p{
+.founders p {
   color: rgb(119, 98, 70);
   text-align: center;
 }
@@ -1158,8 +1145,6 @@ h1 {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-
 
 /* About us */
 
@@ -1218,14 +1203,12 @@ h8 {
 
 /* shopping page */
 
-h4{
-  color: rgb(119, 98, 70) ;
+h4 {
+  color: rgb(119, 98, 70);
 }
 #shopping-cart-effect {
   text-decoration: underline;
 }
-
-
 
 .shopping-container {
   display: flex;
@@ -1275,18 +1258,17 @@ h4{
   color: rgb(119, 98, 70);
   margin: 0;
 }
-.cart-items-img{
+.cart-items-img {
   width: 80%;
 }
 .delete-button {
   background: none;
   border: none;
   font-size: 20px;
-  color:rgb(119, 98, 70);
+  color: rgb(119, 98, 70);
   background-color: none;
   cursor: pointer;
 }
-
 
 /* spring page */
 .springpage {

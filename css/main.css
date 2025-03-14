@@ -174,68 +174,11 @@ figure {
 }
 
 .spring:hover {
-  animation: slideshow2 10s infinite;
+  transition: 1s ease-in-out;
+  background-image: url(../images/spring2.jpg);
 }
 
-@keyframes slideshow2 {
-  0% {
-    background-image: url("../images/spring-campaign.jpg");
-  }
-  5% {
-    background-image: url("../images/spring-campaign.jpg");
-  }
-  10% {
-    background-image: url("../images/spring-campaign.jpg");
-  }
-  15% {
-    background-image: url("../images/spring-campaign.jpg");
-  }
-  20% {
-    background-image: url("../images/spring-campaign.jpg");
-  }
-  25% {
-    background-image: url("../images/spring2.jpg");
-  }
-  30% {
-    background-image: url("../images/spring2.jpg");
-  }
-  45% {
-    background-image: url("../images/spring2.jpg");
-  }
-  50% {
-    background-image: url("../images/spring2.jpg");
-  }
-  55% {
-    background-image: url("../images/spring2.jpg");
-  }
-  60% {
-    background-image: url("../images/spring4.jpg");
-  }
-  65% {
-    background-image: url("../images/spring4.jpg");
-  }
-  70% {
-    background-image: url("../images/spring4.jpg");
-  }
-  75% {
-    background-image: url("../images/spring4.jpg");
-  }
-  80% {
-    background-image: url("../images/spring4.jpg");
-  }
-  85% {
-    background-image: url("../images/spring5.jpg");
-  }
-  90% {
-    background-image: url("../images/spring5.jpg");
-  }
-  95% {
-    background-image: url("../images/spring5.jpg");
-  }
-  100% {
-    background-image: url("../images/spring5.jpg");
-  }
-}
+
 /* spring-campaign */
 
 /* summer-campaign */
@@ -252,66 +195,8 @@ figure {
   font-size: 490%;
 }
 .summer:hover {
-  animation: slideshow 10s infinite;
-}
-@keyframes slideshow {
-  0% {
-    background-image: url("../images/summer-campaign.jpg");
-  }
-  5% {
-    background-image: url("../images/summer-campaign.jpg");
-  }
-  10% {
-    background-image: url("../images/summer-campaign.jpg");
-  }
-  15% {
-    background-image: url("../images/summer-campaign.jpg");
-  }
-  20% {
-    background-image: url("../images/summer-campaign.jpg");
-  }
-  25% {
-    background-image: url("../images/summer2.jpg");
-  }
-  30% {
-    background-image: url("../images/summer2.jpg");
-  }
-  45% {
-    background-image: url("../images/summer2.jpg");
-  }
-  50% {
-    background-image: url("../images/summer2.jpg");
-  }
-  55% {
-    background-image: url("../images/summer2.jpg");
-  }
-  60% {
-    background-image: url("../images/summer3.jpg");
-  }
-  65% {
-    background-image: url("../images/summer3.jpg");
-  }
-  70% {
-    background-image: url("../images/summer3.jpg");
-  }
-  75% {
-    background-image: url("../images/summer3.jpg");
-  }
-  80% {
-    background-image: url("../images/summer3.jpg");
-  }
-  85% {
-    background-image: url("../images/summer4.jpg");
-  }
-  90% {
-    background-image: url("../images/summer4.jpg");
-  }
-  95% {
-    background-image: url("../images/summer4.jpg");
-  }
-  100% {
-    background-image: url("../images/summer4.jpg");
-  }
+  transition: 1s ease-in-out;
+ background-image: url(../images/summer2.jpg);
 }
 /* summer-campaign */
 
@@ -328,7 +213,8 @@ figure {
   font-size: 490%;
 }
 .valentine:hover {
-  animation: slideshow3 10s infinite;
+  transition: 1s ease-in-out;
+  background-image: url(../images/valentine1.jpg);
 }
 @keyframes slideshow3 {
   0% {
@@ -402,7 +288,6 @@ footer {
 @media screen and (min-width: 340px) and (max-width: 500px) {
   /* header and nav */
   header {
-    display: flex;
     align-items: center;
   }
 
@@ -465,16 +350,32 @@ footer {
   }
   /* campaign */
   /* productpage */
-  .product-container ov {
+  .product-container  {
     display: grid;
-    grid-template-columns:
-      repeat 2,
-      1fr;
-    grid-template-rows:
-      repeat 2,
-      1fr;
+    grid-template-columns:1fr !important;
+    grid-template-rows:1fr !important;
+    margin-left: 2vw;
+  }
+  .product-container h2{
+    font-size: 1rem;
+    margin-left: -2vw;
   }
   /* productpage */
+  /* faq */
+  .faq-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+  }
+  .faq {
+    display: grid !important;
+    grid-template-columns: 1fr!important;;
+    grid-template-columns: 1fr!important;;
+    gap: 2%;
+    margin-top: 2%;
+    align-items: center;
+  }
+  /* faq */
   /* footer */
   .footer {
     margin-left: 7%;
@@ -700,9 +601,21 @@ h4 {
   font-size: 200%;
   font-family: "Ubuntu";
 }
-
+.faq-background{
+  background-image: url('../images/faq.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
 #faq-effect {
   text-decoration: underline;
+}
+.faq-title {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2%;
+  margin-top: 2%;
+  align-items: center;
+  margin-left: 33vw;
 }
 
 .faq {

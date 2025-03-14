@@ -306,6 +306,12 @@ footer {
     background-size: cover;
     background-repeat: none;
   }
+  .aboutpage {
+    margin-top: 10vh;
+    padding: 20%;
+    background-size: contain !important;
+    background-repeat: none;
+  }
 
   .home-container {
     display: grid;
@@ -376,6 +382,105 @@ footer {
     align-items: center;
   }
   /* faq */
+  /* contact */
+  .contact-body {
+    display: inline-table !important;
+  }
+  .contact-effect {
+    text-decoration: underline;
+  }
+  
+  .contact-body h1 {
+    color: burlywood;
+  }
+  .contact-left {flex: 1;
+    height: 50vh !important;
+    background-image: url("../images/sideflower.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .contact-right {
+    flex-direction: column;
+    border: solid burlywood;
+  }
+  .contact-right h1 {
+    font-size: 2rem !important;
+    font-weight: normal;
+  }
+  
+  .contact-right span {
+    font-size: 3rem !important;
+    font-family: "Imperial Script";
+  }
+  .contact-right p {
+    font-size: 1rem !important;
+    color: burlywood;
+    margin-bottom: 10px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  input,
+  textarea {
+    width: 80% !important;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid burlywood;
+    border-radius: 5px;
+    background-color: rgb(224, 212, 180);
+  }
+  input::placeholder {
+    color: rgb(0, 0, 0) !important;
+    font-size: 1.2rem;
+  }
+  textarea::placeholder {
+    color:rgb(0, 0, 0) !important;
+    font-size: 1.2rem;
+  }
+  button {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border: solid 2px burlywood;
+    cursor: pointer;
+    transform: transition 0.5s ease-in-out;
+  }
+  button:hover {
+    background-color: burlywood;
+  }
+  .name-flex {
+    display: flex;
+    gap: 10px;
+  }
+  /* contact */
+  /* about */
+  .about .about-content{
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr !important;
+  }
+  .about .about-content .about-right {
+
+  }
+  .about .about-content .about-right h3  {
+text-align: center !important;
+font-size: 2rem !important;
+  }
+
+  .about .about-content .about-right span  {
+text-align: center !important;
+font-size: 2rem !important;
+  }
+  .about .about-content .about-right p {
+    text-align: center !important;
+    margin-left: 5vw !important;
+    font-size: 0.75rem !important;
+  }
+  .founders h4{
+font-size: 2rem !important;
+  }
+  /* about */
   /* footer */
   .footer {
     margin-left: 7%;
@@ -811,7 +916,7 @@ h1 {
 }
 
 .founders h4 {
-  font-family: cursive;
+  font-family: "Imperial Script";
   font-size: 5rem;
   margin-top: 10%;
 }

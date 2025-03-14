@@ -481,6 +481,30 @@ font-size: 2rem !important;
 font-size: 2rem !important;
   }
   /* about */
+  /* detailed page */
+  .left-detailed{
+    margin-top: -10vh;
+    margin-left: 20vw;
+    width: 190%;
+  }
+  .right-detailed{
+    margin-top: 20vh;
+  text-align: center;
+  margin-left: -40vw;
+  }
+
+  .right-detailed h3{
+    font-size: 1.5rem !important;
+  }
+
+  .right-detailed p{
+    font-size: 0.75rem !important;
+  }
+
+  .right-detailed li{
+    font-size: 0.75rem !important;
+  }
+  /* detailed page */
   /* footer */
   .footer {
     margin-left: 7%;

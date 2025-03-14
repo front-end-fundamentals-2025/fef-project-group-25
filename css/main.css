@@ -216,65 +216,7 @@ figure {
   transition: 1s ease-in-out;
   background-image: url(../images/valentine1.jpg);
 }
-@keyframes slideshow3 {
-  0% {
-    background-image: url("../images/valentine-campaign.jpg");
-  }
-  5% {
-    background-image: url("../images/valentine-campaign.jpg");
-  }
-  10% {
-    background-image: url("../images/valentine-campaign.jpg");
-  }
-  15% {
-    background-image: url("../images/valentine-campaign.jpg");
-  }
-  20% {
-    background-image: url("../images/valentine-campaign.jpg");
-  }
-  25% {
-    background-image: url("../images/valentine1.jpg");
-  }
-  30% {
-    background-image: url("../images/valentine1.jpg");
-  }
-  45% {
-    background-image: url("../images/valentine1.jpg");
-  }
-  50% {
-    background-image: url("../images/valentine1.jpg");
-  }
-  55% {
-    background-image: url("../images/valentine1.jpg");
-  }
-  60% {
-    background-image: url("../images/valentine2.jpg");
-  }
-  65% {
-    background-image: url("../images/valentine2.jpg");
-  }
-  70% {
-    background-image: url("../images/valentine2.jpg");
-  }
-  75% {
-    background-image: url("../images/valentine2.jpg");
-  }
-  80% {
-    background-image: url("../images/valentine2.jpg");
-  }
-  85% {
-    background-image: url("../images/valentine3.jpg");
-  }
-  90% {
-    background-image: url("../images/valentine3.jpg");
-  }
-  95% {
-    background-image: url("../images/valentine3.jpg");
-  }
-  100% {
-    background-image: url("../images/valentine3.jpg");
-  }
-}
+
 /* valentine-campaign */
 
 /* footer */
@@ -380,6 +322,11 @@ footer {
     gap: 2%;
     margin-top: 2%;
     align-items: center;
+  }
+
+  .question {
+    font-size: 1rem !important;
+    color: rgb(150, 132, 99);
   }
   /* faq */
   /* contact */
@@ -487,11 +434,13 @@ font-size: 2rem !important;
     grid-template-columns: 1fr !important;
     grid-template-rows: 0.5fr 1fr !important;
   }
+
   .left-detailed{
     margin-left: 20vw;
     width: 100%;
   }
   .right-detailed{
+    margin-top: 20vh;
   text-align: center;
   margin-left: 15vw;
   }
@@ -508,34 +457,26 @@ font-size: 2rem !important;
     font-size: 0.75rem !important;
   }
   /* detailed page */
-  /*shopping page*/
-  .shopping-container{
-    flex-direction: column;
-    gap: 5%;
-    padding: 5%;
-  }
-  .cart-items-img{
-    max-width: 120px;
-  }
-  h4{
-    margin-top: -20%;
-  }
-
-
+    /*shopping page*/
+    .shopping-container{
+      flex-direction: column;
+      gap: 5%;
+      padding: 5%;
+    }
+    .cart-items-img{
+      max-width: 120px;
+    }
+    h4{
+      margin-top: -20%;
+    }
+  
+  
+  
   /* footer */
+  
   .footer {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr 1fr !important;
     margin-left: 7%;
     padding-top: 5%;
-  }
-  .footer .bx-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-left: -10vw;
-    text-align: center;
-    font-size: 1rem;
   }
   .footer .bx-container .bx a{
     font-size: 0.5rem !important;
@@ -656,11 +597,16 @@ font-size: 2rem !important;
   }
   .faq {
     display: grid !important;
-    grid-template-columns: 1fr!important;;
-    grid-template-columns: 1fr!important;;
+    grid-template-columns: 1fr 1fr!important;;
+    grid-template-columns: 1fr 1fr !important;;
     gap: 2%;
     margin-top: 2%;
     align-items: center;
+  }
+
+  .question {
+    font-size: 1rem !important;
+    color: rgb(150, 132, 99);
   }
   /* faq */
   /* contact */
@@ -787,7 +733,7 @@ font-size: 2rem !important;
     font-size: 0.75rem !important;
   }
   /* detailed page */
-
+  
   /*shopping page*/
   .shopping-container{
     flex-direction: column;
@@ -808,7 +754,22 @@ font-size: 2rem !important;
   /*shopping page*/
 
 
+
   /* footer */
+  .footer {
+    margin-left: 7%;
+    padding-top: 5%;
+  }
+  .footer .bx-container {
+    display:flex;
+    flex-wrap: nowrap !important;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .footer .bx-container .bx a{
+    font-size: 1rem !important;
+
+  }
   .footer {
     margin-left: 7%;
     padding-top: 5%;
@@ -1023,7 +984,10 @@ summary::marker {
   background-repeat: none;
   filter: brightness(70%);
 }
-
+.question {
+  font-size: 1rem !important;
+  color: rgb(150, 132, 99);
+}
 /* FAQ page */
 
 /* Contact Us Page */
@@ -1222,13 +1186,12 @@ h1 {
 
 .footer .bx-container .bx a {
   display: block;
-  color: rgb(10, 64, 10);
+  color: wheat;
   font-size: 1.5rem;
   padding: 1rem 0;
 }
 
 .footer .bx-container .bx a:hover {
-  color: #304631;
   text-decoration: underline;
 }
 
@@ -1257,7 +1220,6 @@ h8 {
 
 h4{
   color: rgb(119, 98, 70) ;
-  margin-top: -20%;
 }
 #shopping-cart-effect {
   text-decoration: underline;
@@ -1324,7 +1286,6 @@ h4{
   background-color: none;
   cursor: pointer;
 }
-
 
 
 /* spring page */
